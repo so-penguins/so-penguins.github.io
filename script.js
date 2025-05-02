@@ -184,7 +184,7 @@ function createForceGraph() {
 
 function createCirclePackingMorandi() {
   document.body.className = 'circle-packing';
-  const container = d3.select("visualization");
+  const container = d3.select("#visualization");
   container.html("");
 
   const containerWidth = document.getElementById('visualization').clientWidth;
