@@ -25,7 +25,7 @@
     .force-graph text { font-family: sans-serif; font-size: 10px; pointer-events: none; }
 
     /* Circle Packing specific styles */
-    body.force-graph,body.force-graph-v2, body.circle-packing, body.timeseries {
+    body.circle-packing {
       margin: 0;
       font-family: sans-serif;
       display: flex;
@@ -33,6 +33,19 @@
       align-items: center;
       height: 100vh;
       position: relative;
+    }
+
+    body.circle-packing .visualization-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body.circle-packing svg {
+      max-width: 90%;
+      max-height: 90%;
+      display: block;
+      margin: auto;
     }
 
     .tooltip {
@@ -167,34 +180,60 @@
     /* Button container styles */
     .button-container {
       display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+      gap: 1rem;
+      flex-direction: column;
       margin-bottom: 1rem;
       position: sticky;
       top: 0;
       z-index: 10;
       background: rgba(44, 62, 80, 0.95);
-      padding: 0.5rem;
+      padding: 1rem;
       border-radius: 8px;
+      width: 100%;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
     }
 
     .viz-button {
       padding: 0.75rem 1.5rem;
-      font-size: 1rem;
+      font-size: 0.9rem;
       background-color: #3498db;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       transition: all 0.3s;
+      flex: 1;
+      text-align: center;
+      min-width: 200px;
     }
 
     .viz-button:hover {
       background-color: #2980b9;
+      transform: translateY(-1px);
     }
 
     .viz-button.active {
       background-color: #2ecc71;
+    }
+
+    .viz-description {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 8px;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #ecf0f1;
+      display: none;
+    }
+
+    .viz-description.active {
+      display: block;
     }
 
     /* Visualization container styles */
@@ -205,7 +244,8 @@
       background: rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       overflow: auto;
-      min-height: 0; /* This is crucial for flex overflow to work properly */
+      min-height: 0;
+      margin-top: 1rem;
     }
 
     .visualization-container.active {
@@ -421,16 +461,21 @@
   <section class="visualization-view" id="visualizationView">
     <div class="main-container">
       <div class="button-container">
-        <button class="button is-outlined" onclick="showHome()">
-          <span class="icon is-small">
-            <i class="fas fa-arrow-left"></i>
-          </span>
-        </button>
-        <button class="viz-button button is-info" data-viz="force-graph">Force Graph</button>
-        <button class="viz-button button is-info" data-viz="circle-packing-morandi">Circle Packing Morandi</button>
-        <button class="viz-button button is-info" data-viz="radial-tree-collapsible">Radial Tree Collapsible</button>
-        <button class="viz-button button is-info" data-viz="force-graph-v2">Force Graph V2</button>
-        <button class="viz-button button is-info" data-viz="timeseries">Timeseries</button>
+        <div class="button-row">
+          <button class="button is-outlined" onclick="showHome()">
+            <span class="icon is-small">
+              <i class="fas fa-arrow-left"></i>
+            </span>
+          </button>
+          <button class="viz-button button is-info" data-viz="force-graph">Named Entity Force-Directed Graph</button>
+          <button class="viz-button button is-info" data-viz="circle-packing-morandi">Circle Packing: Frequency of Haunting Reports</button>
+          <button class="viz-button button is-info" data-viz="radial-tree-collapsible">Radial Dendrogram: Apparition-Type Hierarchy</button>
+          <button class="viz-button button is-info" data-viz="force-graph-v2">Force Graph V2</button>
+          <button class="viz-button button is-info" data-viz="timeseries">Time Series: Haunting Events Over Time</button>
+        </div>
+        <div id="viz-description" class="viz-description">
+          <!-- Description will be updated via JavaScript -->
+        </div>
       </div>
       <div id="visualization" class="visualization-container"></div>
       <div id="tooltip" class="tooltip" style="opacity:0;"></div>
@@ -498,12 +543,32 @@
       const forceGraphBtn = document.querySelector('[data-viz="force-graph"]');
       forceGraphBtn.classList.add('active');
       document.getElementById('visualization').classList.add('active');
+      updateVisualizationDescription('force-graph');
       createForceGraph();
     }
 
     function showHome() {
       document.getElementById('homeView').style.display = 'block';
       document.getElementById('visualizationView').style.display = 'none';
+    }
+
+    const visualizationDescriptions = {
+      'force-graph': "This force-directed graph maps out co-occurrences of named entities (people, places, institutions) from the description texts using spaCy's NER. It shows narrative and thematic links across haunting reports. Common terms like 'cemetery,' 'hospital,' and personal names recur, indicating how institutions and folklore are deeply tied to perceptions of the supernatural.",
+      'circle-packing-morandi': "This circle packing chart visualizes how frequently different types of hauntings are reported, based on both apparition type (e.g., Ghost, Poltergeist, Demon) and event type (e.g., Death, Accident, Unknown). Larger circles represent more commonly reported combinations. The visualization shows how the majority of reports involve ambiguous ghostly presences linked to death or trauma, highlighting narrative patterns in the dataset.",
+      'radial-tree-collapsible': "This radial dendrogram shows the nested structure of haunting reports, from apparition type → event category → state → individual place. It visualizes our hierarchical classification work, highlighting that ghosts—especially those tied to murder, trauma, or death—dominate the dataset. Regional clusters, particularly in the Northeast and South, reveal culturally distinct haunting patterns",
+      'force-graph-v2': "",
+      'timeseries': "This timeline reveals when haunting events were reported to occur. Spikes around 1700, 1800, 1900, and 2000 suggest turn-of-century clustering. Mid-century bumps likely reflect social upheaval or trauma, such as industrialization or war. The pattern offers insight into how cultural context influences reports of the supernatural."
+    };
+
+    function updateVisualizationDescription(vizType) {
+      const descriptionEl = document.getElementById('viz-description');
+      const description = visualizationDescriptions[vizType];
+      if (description) {
+        descriptionEl.textContent = description;
+        descriptionEl.classList.add('active');
+      } else {
+        descriptionEl.classList.remove('active');
+      }
     }
 
     /* Functions to create visualizations */
@@ -593,11 +658,15 @@
       
       const containerWidth = document.getElementById('visualization').clientWidth;
       const containerHeight = document.getElementById('visualization').clientHeight;
-      const size = Math.min(containerWidth, containerHeight);
+      const size = Math.min(containerWidth, containerHeight) * 0.9; // Use 90% of the smallest dimension
       
       const svg = container.append("svg")
         .attr("width", size)
         .attr("height", size)
+        .attr("viewBox", [0, 0, size, size])
+        .attr("preserveAspectRatio", "xMidYMid meet")
+        .style("display", "block")
+        .style("margin", "auto");
 
       const tooltip = d3.select("#tooltip");
 
@@ -618,7 +687,7 @@
         const node = svg.selectAll("g")
           .data(nodes)
           .join("g")
-            .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+            .attr("transform", d => `translate(${d.x},${d.y})`);
 
         node.append("circle")
           .attr("r", d => d.r)
@@ -632,8 +701,8 @@
               .style("top", (event.pageY - 28) + "px");
           })
           .on("mouseout", function() {
-                tooltip.transition().duration(500).style("opacity", 0);
-              });
+            tooltip.transition().duration(500).style("opacity", 0);
+          });
 
         node.filter(d => !d.children && d.r > 15).append("text")
           .attr("dy", "0.3em")
@@ -962,6 +1031,9 @@
         const vizType = this.getAttribute('data-viz');
         const container = document.getElementById('visualization');
         container.classList.add('active');
+        
+        // Update description
+        updateVisualizationDescription(vizType);
         
         switch(vizType) {
           case 'force-graph':
