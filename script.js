@@ -328,88 +328,88 @@ function createForceGraphV2() {
 
   const graph = {
     "nodes": [
-      { "id": "Ada Witch", "group": "PERSON" },
-      { "id": "John Smith", "group": "PERSON" },
-      { "id": "Lucy Grey", "group": "PERSON" },
-      { "id": "Ghost Soldier", "group": "PERSON" },
-      { "id": "Emily White", "group": "PERSON" },
-      { "id": "Lady in Red", "group": "PERSON" },
-      { "id": "Phantom Miner", "group": "PERSON" },
-      { "id": "Vanishing Boy", "group": "PERSON" },
-      { "id": "Captain Shade", "group": "PERSON" },
-      { "id": "Wailing Widow", "group": "PERSON" },
-      { "id": "Silent Farmer", "group": "PERSON" },
-      { "id": "Crimson Specter", "group": "PERSON" },
-      { "id": "Old Hermit", "group": "PERSON" },
-      { "id": "Mad Butler", "group": "PERSON" },
-      { "id": "Sorrowful Bride", "group": "PERSON" },
-      { "id": "Drowned Mariner", "group": "PERSON" },
-      { "id": "Headless Coachman", "group": "PERSON" },
-      { "id": "Lost Shepherd", "group": "PERSON" },
-      { "id": "Ada Cemetery", "group": "LOC" },
-      { "id": "Honey Creek", "group": "LOC" },
-      { "id": "Ghost Bridge", "group": "LOC" },
-      { "id": "Phantom Lake", "group": "LOC" },
-      { "id": "Specter Hill", "group": "LOC" },
-      { "id": "Wraith Forest", "group": "LOC" },
-      { "id": "Foggy Valley", "group": "LOC" },
-      { "id": "Devil's Crossroad", "group": "LOC" },
-      { "id": "Moonlit Alley", "group": "LOC" },
-      { "id": "Shaded Meadow", "group": "LOC" },
-      { "id": "Twilight Woods", "group": "LOC" },
-      { "id": "Silent River", "group": "LOC" },
-      { "id": "Cursed Town", "group": "LOC" },
-      { "id": "Ghost Hollow", "group": "LOC" },
-      { "id": "Creepy Manor", "group": "FAC" },
-      { "id": "Old Mill", "group": "FAC" },
-      { "id": "Abandoned Hospital", "group": "FAC" },
-      { "id": "Haunted Train Station", "group": "FAC" },
-      { "id": "Cursed Library", "group": "FAC" },
-      { "id": "Forsaken Church", "group": "FAC" },
-      { "id": "Derelict Lighthouse", "group": "FAC" },
-      { "id": "Broken Tower", "group": "FAC" },
-      { "id": "Rusty Factory", "group": "FAC" },
-      { "id": "Worn Out Tavern", "group": "FAC" },
-      { "id": "Ghost Hunters Association", "group": "ORG" },
-      { "id": "Paranormal Research Society", "group": "ORG" },
-      { "id": "Supernatural Studies Club", "group": "ORG" },
-      { "id": "Mystery Explorers Guild", "group": "ORG" }
+      {"id": "Ada Witch", "group": "PERSON"},
+      {"id": "John Smith", "group": "PERSON"},
+      {"id": "Lucy Grey", "group": "PERSON"},
+      {"id": "Ghost Soldier", "group": "PERSON"},
+      {"id": "Emily White", "group": "PERSON"},
+      {"id": "Lady in Red", "group": "PERSON"},
+      {"id": "Phantom Miner", "group": "PERSON"},
+      {"id": "Vanishing Boy", "group": "PERSON"},
+      {"id": "Captain Shade", "group": "PERSON"},
+      {"id": "Wailing Widow", "group": "PERSON"},
+      {"id": "Silent Farmer", "group": "PERSON"},
+      {"id": "Crimson Specter", "group": "PERSON"},
+      {"id": "Old Hermit", "group": "PERSON"},
+      {"id": "Mad Butler", "group": "PERSON"},
+      {"id": "Sorrowful Bride", "group": "PERSON"},
+      {"id": "Drowned Mariner", "group": "PERSON"},
+      {"id": "Headless Coachman", "group": "PERSON"},
+      {"id": "Lost Shepherd", "group": "PERSON"},
+      {"id": "Ada Cemetery", "group": "LOC"},
+      {"id": "Honey Creek", "group": "LOC"},
+      {"id": "Ghost Bridge", "group": "LOC"},
+      {"id": "Phantom Lake", "group": "LOC"},
+      {"id": "Specter Hill", "group": "LOC"},
+      {"id": "Wraith Forest", "group": "LOC"},
+      {"id": "Foggy Valley", "group": "LOC"},
+      {"id": "Devil's Crossroad", "group": "LOC"},
+      {"id": "Moonlit Alley", "group": "LOC"},
+      {"id": "Shaded Meadow", "group": "LOC"},
+      {"id": "Twilight Woods", "group": "LOC"},
+      {"id": "Silent River", "group": "LOC"},
+      {"id": "Cursed Town", "group": "LOC"},
+      {"id": "Ghost Hollow", "group": "LOC"},
+      {"id": "Creepy Manor", "group": "FAC"},
+      {"id": "Old Mill", "group": "FAC"},
+      {"id": "Abandoned Hospital", "group": "FAC"},
+      {"id": "Haunted Train Station", "group": "FAC"},
+      {"id": "Cursed Library", "group": "FAC"},
+      {"id": "Forsaken Church", "group": "FAC"},
+      {"id": "Derelict Lighthouse", "group": "FAC"},
+      {"id": "Broken Tower", "group": "FAC"},
+      {"id": "Rusty Factory", "group": "FAC"},
+      {"id": "Worn Out Tavern", "group": "FAC"},
+      {"id": "Ghost Hunters Association", "group": "ORG"},
+      {"id": "Paranormal Research Society", "group": "ORG"},
+      {"id": "Supernatural Studies Club", "group": "ORG"},
+      {"id": "Mystery Explorers Guild", "group": "ORG"}
     ],
     "links": [
-      { "source": "Ada Witch", "target": "Ada Cemetery" },
-      { "source": "John Smith", "target": "Honey Creek" },
-      { "source": "Lucy Grey", "target": "Ghost Bridge" },
-      { "source": "Ghost Soldier", "target": "Phantom Lake" },
-      { "source": "Emily White", "target": "Specter Hill" },
-      { "source": "Lady in Red", "target": "Wraith Forest" },
-      { "source": "Phantom Miner", "target": "Foggy Valley" },
-      { "source": "Vanishing Boy", "target": "Devil's Crossroad" },
-      { "source": "Captain Shade", "target": "Moonlit Alley" },
-      { "source": "Wailing Widow", "target": "Shaded Meadow" },
-      { "source": "Silent Farmer", "target": "Twilight Woods" },
-      { "source": "Crimson Specter", "target": "Silent River" },
-      { "source": "Old Hermit", "target": "Cursed Town" },
-      { "source": "Mad Butler", "target": "Ghost Hollow" },
-      { "source": "Ada Cemetery", "target": "Creepy Manor" },
-      { "source": "Honey Creek", "target": "Old Mill" },
-      { "source": "Ghost Bridge", "target": "Abandoned Hospital" },
-      { "source": "Phantom Lake", "target": "Haunted Train Station" },
-      { "source": "Specter Hill", "target": "Cursed Library" },
-      { "source": "Wraith Forest", "target": "Forsaken Church" },
-      { "source": "Foggy Valley", "target": "Derelict Lighthouse" },
-      { "source": "Devil's Crossroad", "target": "Broken Tower" },
-      { "source": "Moonlit Alley", "target": "Rusty Factory" },
-      { "source": "Shaded Meadow", "target": "Worn Out Tavern" },
-      { "source": "Creepy Manor", "target": "Ghost Hunters Association" },
-      { "source": "Old Mill", "target": "Ghost Hunters Association" },
-      { "source": "Abandoned Hospital", "target": "Paranormal Research Society" },
-      { "source": "Haunted Train Station", "target": "Paranormal Research Society" },
-      { "source": "Cursed Library", "target": "Supernatural Studies Club" },
-      { "source": "Forsaken Church", "target": "Supernatural Studies Club" },
-      { "source": "Derelict Lighthouse", "target": "Mystery Explorers Guild" },
-      { "source": "Broken Tower", "target": "Mystery Explorers Guild" },
-      { "source": "Rusty Factory", "target": "Mystery Explorers Guild" },
-      { "source": "Worn Out Tavern", "target": "Mystery Explorers Guild" }
+      {"source": "Ada Witch", "target": "Ada Cemetery"},
+      {"source": "John Smith", "target": "Honey Creek"},
+      {"source": "Lucy Grey", "target": "Ghost Bridge"},
+      {"source": "Ghost Soldier", "target": "Phantom Lake"},
+      {"source": "Emily White", "target": "Specter Hill"},
+      {"source": "Lady in Red", "target": "Wraith Forest"},
+      {"source": "Phantom Miner", "target": "Foggy Valley"},
+      {"source": "Vanishing Boy", "target": "Devil's Crossroad"},
+      {"source": "Captain Shade", "target": "Moonlit Alley"},
+      {"source": "Wailing Widow", "target": "Shaded Meadow"},
+      {"source": "Silent Farmer", "target": "Twilight Woods"},
+      {"source": "Crimson Specter", "target": "Silent River"},
+      {"source": "Old Hermit", "target": "Cursed Town"},
+      {"source": "Mad Butler", "target": "Ghost Hollow"},
+      {"source": "Ada Cemetery", "target": "Creepy Manor"},
+      {"source": "Honey Creek", "target": "Old Mill"},
+      {"source": "Ghost Bridge", "target": "Abandoned Hospital"},
+      {"source": "Phantom Lake", "target": "Haunted Train Station"},
+      {"source": "Specter Hill", "target": "Cursed Library"},
+      {"source": "Wraith Forest", "target": "Forsaken Church"},
+      {"source": "Foggy Valley", "target": "Derelict Lighthouse"},
+      {"source": "Devil's Crossroad", "target": "Broken Tower"},
+      {"source": "Moonlit Alley", "target": "Rusty Factory"},
+      {"source": "Shaded Meadow", "target": "Worn Out Tavern"},
+      {"source": "Creepy Manor", "target": "Ghost Hunters Association"},
+      {"source": "Old Mill", "target": "Ghost Hunters Association"},
+      {"source": "Abandoned Hospital", "target": "Paranormal Research Society"},
+      {"source": "Haunted Train Station", "target": "Paranormal Research Society"},
+      {"source": "Cursed Library", "target": "Supernatural Studies Club"},
+      {"source": "Forsaken Church", "target": "Supernatural Studies Club"},
+      {"source": "Derelict Lighthouse", "target": "Mystery Explorers Guild"},
+      {"source": "Broken Tower", "target": "Mystery Explorers Guild"},
+      {"source": "Rusty Factory", "target": "Mystery Explorers Guild"},
+      {"source": "Worn Out Tavern", "target": "Mystery Explorers Guild"}
     ]
   };
 
@@ -420,66 +420,78 @@ function createForceGraphV2() {
     .attr("width", width)
     .attr("height", height)
 
-  d3.json("./json/timeseries.json").then(data => {
-    const color = d3.scaleOrdinal(d3.schemeCategory10);
+  const color = d3.scaleOrdinal(d3.schemeCategory10);
 
-    const simulation = d3.forceSimulation(graph.nodes)
-      .force("link", d3.forceLink(graph.links).id(d => d.id).distance(100))
-      .force("charge", d3.forceManyBody().strength(-200))
-      .force("center", d3.forceCenter(width / 2, height / 2));
+  // Add zoom behavior (NEW)
+  const zoom = d3.zoom()
+    .scaleExtent([0.1, 4]) // Limit zoom range
+    .on("zoom", (event) => {
+        g.attr("transform", event.transform);
+    });
 
-    const link = svg.append("g")
-      .attr("stroke", "#aaa")
-      .selectAll("line")
-      .data(graph.links)
-      .join("line")
-      .attr("stroke-width", d => Math.sqrt(d.value));
+  const g = svg.append("g").call(zoom);
 
-    const node = svg.append("g")
-      .attr("stroke", "#fff")
-      .attr("stroke-width", 1.5)
-      .selectAll("circle")
-      .data(graph.nodes)
-      .join("circle")
-      .attr("r", 6)
-      .attr("fill", d => color(d.group))
-      .call(d3.drag()
+  const simulation = d3.forceSimulation(graph.nodes)
+    .force("link", d3.forceLink(graph.links).id(d => d.id).distance(100))
+    .force("charge", d3.forceManyBody().strength(-200))
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+  const link = svg.append("g")
+    .attr("stroke", "#aaa")
+    .selectAll("line")
+    .data(graph.links)
+    .join("line")
+    .attr("stroke-width", d => Math.sqrt(d.value));
+
+  const node = g.append("g")
+    .attr("stroke", "#fff")
+    .selectAll("g")
+    .data(graph.nodes)
+    .join("g")
+    .call(d3.drag()
         .on("start", dragstarted)
         .on("drag", dragged)
         .on("end", dragended));
 
-    node.append("title")
-      .text(d => d.id + " (" + d.group + ")");
+  node.append("circle")
+    .attr("r", 6)
+    .attr("fill", d => color(d.group));
 
-    simulation.on("tick", () => {
-      link
-        .attr("x1", d => d.source.x)
-        .attr("y1", d => d.source.y)
-        .attr("x2", d => d.target.x)
-        .attr("y2", d => d.target.y);
+  node.append("text")
+    .attr("class", "node-label")
+    .attr("dy", -10) // Position above node
+    .text(d => d.id);
 
-      node
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y);
-    });
+  node.append("title")
+    .text(d => d.id + " (" + d.group + ")");
 
-    function dragstarted(event, d) {
-      if (!event.active) simulation.alphaTarget(0.3).restart();
-      d.fx = d.x;
-      d.fy = d.y;
-    }
+  simulation.on("tick", () => {
+    link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y);
 
-    function dragged(event, d) {
-      d.fx = event.x;
-      d.fy = event.y;
-    }
+    node
+      .attr("transform", d => `translate(${d.x},${d.y})`);
+  });
 
-    function dragended(event, d) {
-      if (!event.active) simulation.alphaTarget(0);
-      d.fx = null;
-      d.fy = null;
-    }
-  })
+  function dragstarted(event, d) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+
+  function dragged(event, d) {
+    d.fx = event.x;
+    d.fy = event.y;
+  }
+
+  function dragended(event, d) {
+    if (!event.active) simulation.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+  }
 }
 
 function createTimeseries() {

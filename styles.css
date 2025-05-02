@@ -256,6 +256,14 @@ body.force-graph .visualization-container svg {
   min-height: 800px;
 }
 
+.node-label {
+  font-size: 10px;
+  pointer-events: none;
+  fill: #333;
+  font-weight: 300;
+  /* text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white; */
+}
+
 /* Radial Tree specific styles */
 body.radial-tree {
   margin: 0;
