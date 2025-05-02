@@ -271,7 +271,7 @@ body.force-graph .visualization-container svg {
 .node-label {
   font-size: 10px;
   pointer-events: none;
-  fill: #333;
+  fill: #fff;
   font-weight: 300;
 }
 
