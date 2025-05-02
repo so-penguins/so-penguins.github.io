@@ -481,10 +481,10 @@
 
         on: {
           init: function () {
-            document.getElementById('slide-description').innerHTML = "<b>Description that generated the image:</b><br><br>" + descriptions[0];
+            document.getElementById('slide-description').innerHTML = "<b>Description that generated the image:</b><br>" + descriptions[0];
           },
           slideChange: function () {
-            document.getElementById('slide-description').innerHTML = "<b>Description that generated the image:</b><br><br>" + descriptions[this.activeIndex];
+            document.getElementById('slide-description').innerHTML = "<b>Description that generated the image:</b><br>" + descriptions[this.activeIndex];
           }
         }
       });
