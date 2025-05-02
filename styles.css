@@ -1,0 +1,356 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  transition: background-color 0.5s ease;
+  background: #2c3e50;
+  overflow-x: hidden;
+  color: #ecf0f1;
+}
+
+/* Force Graph specific styles */
+.force-graph .node { fill: #69b3a2; stroke: #fff; stroke-width: 1.5px; }
+.force-graph .link { stroke: #c9c9c9; stroke-opacity: 0.6; }
+.force-graph text { font-family: sans-serif; font-size: 10px; pointer-events: none; }
+
+/* Circle Packing specific styles */
+body.circle-packing {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+body.circle-packing .visualization-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.circle-packing svg {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: auto;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 5px;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+/* Visualization styles */
+.visualization-view {
+  display: none;
+}
+
+.visualization-view.is-active {
+  display: block;
+}
+
+.home-view {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 12px;
+  background: #2c3e50;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-description {
+  position: static;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Custom scrollbar for the description */
+.carousel-description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.carousel-description::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.carousel-description::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.carousel-description::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.15);
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.8rem !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Main container styles */
+.main-container {
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  margin: 1rem;
+  height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Button container styles */
+.button-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(44, 62, 80, 0.95);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.viz-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  flex: 1;
+  text-align: center;
+  min-width: 200px;
+}
+
+.viz-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+.viz-button.active {
+  background-color: #2ecc71;
+}
+
+.viz-description {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #ecf0f1;
+  display: none;
+}
+
+.viz-description.active {
+  display: block;
+}
+
+/* Visualization container styles */
+.visualization-container {
+  flex: 1;
+  display: none;
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: auto;
+  min-height: 0;
+  margin-top: 1rem;
+}
+
+.visualization-container.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualization-container svg {
+  width: 100%;
+  height: 100%;
+  min-height: 500px; /* Ensure minimum height for visualizations */
+}
+
+/* Force Graph specific styles */
+body.force-graph .visualization-container svg {
+  min-width: 1000px;
+  min-height: 800px;
+}
+
+/* Radial Tree specific styles */
+body.radial-tree {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+svg {
+  cursor: move;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, rgba(44, 62, 80, 0.95), rgba(44, 62, 80, 0.98));
+}
+
+.title.is-2 {
+  font-size: 2.8rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin-bottom: 3rem !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Explore button styles */
+.button.is-primary.is-large {
+  background-color: #3498db;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.button.is-primary.is-large:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .title.is-2 {
+    font-size: 2rem !important;
+  }
+
+  .swiper {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .carousel-description {
+    font-size: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .main-container {
+    margin: 0.5rem;
+    padding: 1rem;
+    height: calc(100vh - 1rem);
+  }
+
+  .button-container {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+  }
+
+  .viz-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .main-container {
+    margin: 0.25rem;
+    padding: 0.5rem;
+    height: calc(100vh - 0.5rem);
+  }
+
+  .button-container {
+    gap: 0.5rem;
+  }
+
+  .viz-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+}
