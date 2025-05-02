@@ -212,8 +212,6 @@ body.circle-packing svg {
 }
 
 .viz-description {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
   border-radius: 8px;
   margin-top: 0.5rem;
   font-size: 0.9rem;
@@ -224,6 +222,20 @@ body.circle-packing svg {
 
 .viz-description.active {
   display: block;
+}
+
+.viz-info-container {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.viz-title {
+  background: none !important;
+  margin-bottom: 0.3rem;
 }
 
 /* Visualization container styles */
@@ -261,7 +273,6 @@ body.force-graph .visualization-container svg {
   pointer-events: none;
   fill: #333;
   font-weight: 300;
-  /* text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white; */
 }
 
 /* Radial Tree specific styles */
@@ -289,6 +300,24 @@ svg {
   line-height: 1.4 !important;
   margin-bottom: 3rem !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#legend {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(255,255,255,0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+.legend-item {
+  margin: 5px 0;
+}
+.legend-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
 }
 
 /* Explore button styles */

@@ -1,4 +1,3 @@
-
 /* Initialize Swiper */
 document.addEventListener('DOMContentLoaded', function () {
   const descriptions = [
@@ -70,13 +69,29 @@ const visualizationDescriptions = {
   'force-graph': "This force-directed graph maps out co-occurrences of named entities (people, places, institutions) from the description texts using spaCy's NER. It shows narrative and thematic links across haunting reports. Common terms like 'cemetery,' 'hospital,' and personal names recur, indicating how institutions and folklore are deeply tied to perceptions of the supernatural.",
   'circle-packing-morandi': "This circle packing chart visualizes how frequently different types of hauntings are reported, based on both apparition type (e.g., Ghost, Poltergeist, Demon) and event type (e.g., Death, Accident, Unknown). Larger circles represent more commonly reported combinations. The visualization shows how the majority of reports involve ambiguous ghostly presences linked to death or trauma, highlighting narrative patterns in the dataset.",
   'radial-tree-collapsible': "This radial dendrogram shows the nested structure of haunting reports, from apparition type → event category → state → individual place. It visualizes our hierarchical classification work, highlighting that ghosts—especially those tied to murder, trauma, or death—dominate the dataset. Regional clusters, particularly in the Northeast and South, reveal culturally distinct haunting patterns",
-  'force-graph-v2': "",
+  'force-graph-v2': "This force-directed graph explores how AI-generated image captions link haunted locations by visual themes. Nodes represent haunted places, and edges represent caption-based similarity. The sparse connectivity and primarily linear paths suggest low visual overlap between entries, with few shared motifs across the dataset. A notable exception is the 'Mystery Explorers Guild' node (shown in red), which stands out for its higher connectivity.",
   'timeseries': "This timeline reveals when haunting events were reported to occur. Spikes around 1700, 1800, 1900, and 2000 suggest turn-of-century clustering. Mid-century bumps likely reflect social upheaval or trauma, such as industrialization or war. The pattern offers insight into how cultural context influences reports of the supernatural."
 };
 
+const visualizationTitles = {
+  'force-graph': 'Named Entity Force-Directed Graph',
+  'circle-packing-morandi': 'Circle Packing: Frequency of Haunting Reports',
+  'radial-tree-collapsible': 'Radial Dendrogram: Apparition-Type Hierarchy',
+  'force-graph-v2': 'Force-Directed Graph: Image-Based Connections Between Haunted Places',
+  'timeseries': 'Time Series: Haunting Events Over Time'
+};
+
 function updateVisualizationDescription(vizType) {
+  const titleEl = document.getElementById('viz-title');
   const descriptionEl = document.getElementById('viz-description');
+  const title = visualizationTitles[vizType];
   const description = visualizationDescriptions[vizType];
+  if (title) {
+    titleEl.textContent = title;
+    titleEl.style.display = 'block';
+  } else {
+    titleEl.style.display = 'none';
+  }
   if (description) {
     descriptionEl.textContent = description;
     descriptionEl.classList.add('active');
@@ -328,88 +343,88 @@ function createForceGraphV2() {
 
   const graph = {
     "nodes": [
-      {"id": "Ada Witch", "group": "PERSON"},
-      {"id": "John Smith", "group": "PERSON"},
-      {"id": "Lucy Grey", "group": "PERSON"},
-      {"id": "Ghost Soldier", "group": "PERSON"},
-      {"id": "Emily White", "group": "PERSON"},
-      {"id": "Lady in Red", "group": "PERSON"},
-      {"id": "Phantom Miner", "group": "PERSON"},
-      {"id": "Vanishing Boy", "group": "PERSON"},
-      {"id": "Captain Shade", "group": "PERSON"},
-      {"id": "Wailing Widow", "group": "PERSON"},
-      {"id": "Silent Farmer", "group": "PERSON"},
-      {"id": "Crimson Specter", "group": "PERSON"},
-      {"id": "Old Hermit", "group": "PERSON"},
-      {"id": "Mad Butler", "group": "PERSON"},
-      {"id": "Sorrowful Bride", "group": "PERSON"},
-      {"id": "Drowned Mariner", "group": "PERSON"},
-      {"id": "Headless Coachman", "group": "PERSON"},
-      {"id": "Lost Shepherd", "group": "PERSON"},
-      {"id": "Ada Cemetery", "group": "LOC"},
-      {"id": "Honey Creek", "group": "LOC"},
-      {"id": "Ghost Bridge", "group": "LOC"},
-      {"id": "Phantom Lake", "group": "LOC"},
-      {"id": "Specter Hill", "group": "LOC"},
-      {"id": "Wraith Forest", "group": "LOC"},
-      {"id": "Foggy Valley", "group": "LOC"},
-      {"id": "Devil's Crossroad", "group": "LOC"},
-      {"id": "Moonlit Alley", "group": "LOC"},
-      {"id": "Shaded Meadow", "group": "LOC"},
-      {"id": "Twilight Woods", "group": "LOC"},
-      {"id": "Silent River", "group": "LOC"},
-      {"id": "Cursed Town", "group": "LOC"},
-      {"id": "Ghost Hollow", "group": "LOC"},
-      {"id": "Creepy Manor", "group": "FAC"},
-      {"id": "Old Mill", "group": "FAC"},
-      {"id": "Abandoned Hospital", "group": "FAC"},
-      {"id": "Haunted Train Station", "group": "FAC"},
-      {"id": "Cursed Library", "group": "FAC"},
-      {"id": "Forsaken Church", "group": "FAC"},
-      {"id": "Derelict Lighthouse", "group": "FAC"},
-      {"id": "Broken Tower", "group": "FAC"},
-      {"id": "Rusty Factory", "group": "FAC"},
-      {"id": "Worn Out Tavern", "group": "FAC"},
-      {"id": "Ghost Hunters Association", "group": "ORG"},
-      {"id": "Paranormal Research Society", "group": "ORG"},
-      {"id": "Supernatural Studies Club", "group": "ORG"},
-      {"id": "Mystery Explorers Guild", "group": "ORG"}
+      { "id": "Ada Witch", "group": "PERSON", "size": 8 },
+      { "id": "John Smith", "group": "PERSON", "size": 6 },
+      { "id": "Lucy Grey", "group": "PERSON", "size": 7 },
+      { "id": "Ghost Soldier", "group": "PERSON", "size": 8 },
+      { "id": "Emily White", "group": "PERSON", "size": 6 },
+      { "id": "Lady in Red", "group": "PERSON", "size": 7 },
+      { "id": "Phantom Miner", "group": "PERSON", "size": 8 },
+      { "id": "Vanishing Boy", "group": "PERSON", "size": 6 },
+      { "id": "Captain Shade", "group": "PERSON", "size": 7 },
+      { "id": "Wailing Widow", "group": "PERSON", "size": 8 },
+      { "id": "Silent Farmer", "group": "PERSON", "size": 6 },
+      { "id": "Crimson Specter", "group": "PERSON", "size": 7 },
+      { "id": "Old Hermit", "group": "PERSON", "size": 8 },
+      { "id": "Mad Butler", "group": "PERSON", "size": 6 },
+      { "id": "Sorrowful Bride", "group": "PERSON", "size": 7 },
+      { "id": "Drowned Mariner", "group": "PERSON", "size": 8 },
+      { "id": "Headless Coachman", "group": "PERSON", "size": 6 },
+      { "id": "Lost Shepherd", "group": "PERSON", "size": 7 },
+      { "id": "Ada Cemetery", "group": "LOC", "size": 10 },
+      { "id": "Honey Creek", "group": "LOC", "size": 9 },
+      { "id": "Ghost Bridge", "group": "LOC", "size": 10 },
+      { "id": "Phantom Lake", "group": "LOC", "size": 9 },
+      { "id": "Specter Hill", "group": "LOC", "size": 10 },
+      { "id": "Wraith Forest", "group": "LOC", "size": 9 },
+      { "id": "Foggy Valley", "group": "LOC", "size": 10 },
+      { "id": "Devil's Crossroad", "group": "LOC", "size": 9 },
+      { "id": "Moonlit Alley", "group": "LOC", "size": 10 },
+      { "id": "Shaded Meadow", "group": "LOC", "size": 9 },
+      { "id": "Twilight Woods", "group": "LOC", "size": 10 },
+      { "id": "Silent River", "group": "LOC", "size": 9 },
+      { "id": "Cursed Town", "group": "LOC", "size": 10 },
+      { "id": "Ghost Hollow", "group": "LOC", "size": 9 },
+      { "id": "Creepy Manor", "group": "FAC", "size": 12 },
+      { "id": "Old Mill", "group": "FAC", "size": 11 },
+      { "id": "Abandoned Hospital", "group": "FAC", "size": 12 },
+      { "id": "Haunted Train Station", "group": "FAC", "size": 11 },
+      { "id": "Cursed Library", "group": "FAC", "size": 12 },
+      { "id": "Forsaken Church", "group": "FAC", "size": 11 },
+      { "id": "Derelict Lighthouse", "group": "FAC", "size": 12 },
+      { "id": "Broken Tower", "group": "FAC", "size": 11 },
+      { "id": "Rusty Factory", "group": "FAC", "size": 12 },
+      { "id": "Worn Out Tavern", "group": "FAC", "size": 11 },
+      { "id": "Ghost Hunters Association", "group": "ORG", "size": 14 },
+      { "id": "Paranormal Research Society", "group": "ORG", "size": 13 },
+      { "id": "Supernatural Studies Club", "group": "ORG", "size": 14 },
+      { "id": "Mystery Explorers Guild", "group": "ORG", "size": 13 }
     ],
     "links": [
-      {"source": "Ada Witch", "target": "Ada Cemetery"},
-      {"source": "John Smith", "target": "Honey Creek"},
-      {"source": "Lucy Grey", "target": "Ghost Bridge"},
-      {"source": "Ghost Soldier", "target": "Phantom Lake"},
-      {"source": "Emily White", "target": "Specter Hill"},
-      {"source": "Lady in Red", "target": "Wraith Forest"},
-      {"source": "Phantom Miner", "target": "Foggy Valley"},
-      {"source": "Vanishing Boy", "target": "Devil's Crossroad"},
-      {"source": "Captain Shade", "target": "Moonlit Alley"},
-      {"source": "Wailing Widow", "target": "Shaded Meadow"},
-      {"source": "Silent Farmer", "target": "Twilight Woods"},
-      {"source": "Crimson Specter", "target": "Silent River"},
-      {"source": "Old Hermit", "target": "Cursed Town"},
-      {"source": "Mad Butler", "target": "Ghost Hollow"},
-      {"source": "Ada Cemetery", "target": "Creepy Manor"},
-      {"source": "Honey Creek", "target": "Old Mill"},
-      {"source": "Ghost Bridge", "target": "Abandoned Hospital"},
-      {"source": "Phantom Lake", "target": "Haunted Train Station"},
-      {"source": "Specter Hill", "target": "Cursed Library"},
-      {"source": "Wraith Forest", "target": "Forsaken Church"},
-      {"source": "Foggy Valley", "target": "Derelict Lighthouse"},
-      {"source": "Devil's Crossroad", "target": "Broken Tower"},
-      {"source": "Moonlit Alley", "target": "Rusty Factory"},
-      {"source": "Shaded Meadow", "target": "Worn Out Tavern"},
-      {"source": "Creepy Manor", "target": "Ghost Hunters Association"},
-      {"source": "Old Mill", "target": "Ghost Hunters Association"},
-      {"source": "Abandoned Hospital", "target": "Paranormal Research Society"},
-      {"source": "Haunted Train Station", "target": "Paranormal Research Society"},
-      {"source": "Cursed Library", "target": "Supernatural Studies Club"},
-      {"source": "Forsaken Church", "target": "Supernatural Studies Club"},
-      {"source": "Derelict Lighthouse", "target": "Mystery Explorers Guild"},
-      {"source": "Broken Tower", "target": "Mystery Explorers Guild"},
-      {"source": "Rusty Factory", "target": "Mystery Explorers Guild"},
-      {"source": "Worn Out Tavern", "target": "Mystery Explorers Guild"}
+      { "source": "Ada Witch", "target": "Ada Cemetery", "value": 1 },
+      { "source": "John Smith", "target": "Honey Creek", "value": 1 },
+      { "source": "Lucy Grey", "target": "Ghost Bridge", "value": 1 },
+      { "source": "Ghost Soldier", "target": "Phantom Lake", "value": 1 },
+      { "source": "Emily White", "target": "Specter Hill", "value": 1 },
+      { "source": "Lady in Red", "target": "Wraith Forest", "value": 1 },
+      { "source": "Phantom Miner", "target": "Foggy Valley", "value": 1 },
+      { "source": "Vanishing Boy", "target": "Devil's Crossroad", "value": 1 },
+      { "source": "Captain Shade", "target": "Moonlit Alley", "value": 1 },
+      { "source": "Wailing Widow", "target": "Shaded Meadow", "value": 1 },
+      { "source": "Silent Farmer", "target": "Twilight Woods", "value": 1 },
+      { "source": "Crimson Specter", "target": "Silent River", "value": 1 },
+      { "source": "Old Hermit", "target": "Cursed Town", "value": 1 },
+      { "source": "Mad Butler", "target": "Ghost Hollow", "value": 1 },
+      { "source": "Ada Cemetery", "target": "Creepy Manor", "value": 2 },
+      { "source": "Honey Creek", "target": "Old Mill", "value": 2 },
+      { "source": "Ghost Bridge", "target": "Abandoned Hospital", "value": 2 },
+      { "source": "Phantom Lake", "target": "Haunted Train Station", "value": 2 },
+      { "source": "Specter Hill", "target": "Cursed Library", "value": 2 },
+      { "source": "Wraith Forest", "target": "Forsaken Church", "value": 2 },
+      { "source": "Foggy Valley", "target": "Derelict Lighthouse", "value": 2 },
+      { "source": "Devil's Crossroad", "target": "Broken Tower", "value": 2 },
+      { "source": "Moonlit Alley", "target": "Rusty Factory", "value": 2 },
+      { "source": "Shaded Meadow", "target": "Worn Out Tavern", "value": 2 },
+      { "source": "Creepy Manor", "target": "Ghost Hunters Association", "value": 3 },
+      { "source": "Old Mill", "target": "Ghost Hunters Association", "value": 3 },
+      { "source": "Abandoned Hospital", "target": "Paranormal Research Society", "value": 3 },
+      { "source": "Haunted Train Station", "target": "Paranormal Research Society", "value": 3 },
+      { "source": "Cursed Library", "target": "Supernatural Studies Club", "value": 3 },
+      { "source": "Forsaken Church", "target": "Supernatural Studies Club", "value": 3 },
+      { "source": "Derelict Lighthouse", "target": "Mystery Explorers Guild", "value": 3 },
+      { "source": "Broken Tower", "target": "Mystery Explorers Guild", "value": 3 },
+      { "source": "Rusty Factory", "target": "Mystery Explorers Guild", "value": 3 },
+      { "source": "Worn Out Tavern", "target": "Mystery Explorers Guild", "value": 3 }
     ]
   };
 
@@ -420,51 +435,83 @@ function createForceGraphV2() {
     .attr("width", width)
     .attr("height", height)
 
-  const color = d3.scaleOrdinal(d3.schemeCategory10);
 
-  // Add zoom behavior (NEW)
+  // Color scale by group
+  const color = d3.scaleOrdinal()
+    .domain(["PERSON", "LOC", "FAC", "ORG"])
+    .range(["#ff7f0e", "#1f77b4", "#2ca02c", "#d62728"]);
+
+  // Create legend
+  const legend = d3.select("#legend")
+    .append("div")
+    .selectAll(".legend-item")
+    .data(color.domain())
+    .enter().append("div")
+    .attr("class", "legend-item");
+
+  legend.append("div")
+    .attr("class", "legend-color")
+    .style("background-color", color);
+
+  legend.append("text")
+    .text(d => d)
+    .style("margin-left", "5px");
+
+  // Zoom behavior
   const zoom = d3.zoom()
-    .scaleExtent([0.1, 4]) // Limit zoom range
+    .scaleExtent([0.1, 8])
     .on("zoom", (event) => {
-        g.attr("transform", event.transform);
+      g.attr("transform", event.transform);
     });
 
-  const g = svg.append("g").call(zoom);
+  svg.call(zoom);
 
+  const g = svg.append("g");
+
+  // Force simulation with better parameters
   const simulation = d3.forceSimulation(graph.nodes)
     .force("link", d3.forceLink(graph.links).id(d => d.id).distance(100))
-    .force("charge", d3.forceManyBody().strength(-200))
-    .force("center", d3.forceCenter(width / 2, height / 2));
+    .force("charge", d3.forceManyBody().strength(-300))
+    .force("center", d3.forceCenter(width / 2, height / 2))
+    .force("collision", d3.forceCollide().radius(d => d.size + 2));
 
-  const link = svg.append("g")
+  // Links with varying thickness
+  const link = g.append("g")
     .attr("stroke", "#aaa")
     .selectAll("line")
     .data(graph.links)
     .join("line")
     .attr("stroke-width", d => Math.sqrt(d.value));
 
+
+  // Node groups (for circle + label)
   const node = g.append("g")
-    .attr("stroke", "#fff")
+    .attr("class", "nodes")
     .selectAll("g")
     .data(graph.nodes)
-    .join("g")
+    .enter().append("g")
     .call(d3.drag()
-        .on("start", dragstarted)
-        .on("drag", dragged)
-        .on("end", dragended));
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended));
 
+  // Circles with size based on data
   node.append("circle")
-    .attr("r", 6)
+    .attr("class", "node")
+    .attr("r", d => d.size)
     .attr("fill", d => color(d.group));
 
+  // Labels for all nodes
   node.append("text")
     .attr("class", "node-label")
-    .attr("dy", -10) // Position above node
+    .attr("dy", d => -d.size - 2)
     .text(d => d.id);
 
+  // Tooltips
   node.append("title")
-    .text(d => d.id + " (" + d.group + ")");
+    .text(d => `${d.id} (${d.group})`);
 
+  // Update positions on tick
   simulation.on("tick", () => {
     link
       .attr("x1", d => d.source.x)
@@ -476,6 +523,7 @@ function createForceGraphV2() {
       .attr("transform", d => `translate(${d.x},${d.y})`);
   });
 
+  // Drag functions
   function dragstarted(event, d) {
     if (!event.active) simulation.alphaTarget(0.3).restart();
     d.fx = d.x;
@@ -492,6 +540,27 @@ function createForceGraphV2() {
     d.fx = null;
     d.fy = null;
   }
+
+  // Initial zoom to fit
+  setTimeout(() => {
+    const bounds = svg.node().getBBox();
+    const parent = svg.node().parentElement;
+    const fullWidth = parent.clientWidth;
+    const fullHeight = parent.clientHeight;
+    const width = bounds.width;
+    const height = bounds.height;
+    const midX = bounds.x + width / 2;
+    const midY = bounds.y + height / 2;
+
+    if (width === 0 || height === 0) return;
+
+    const scale = 0.9 / Math.max(width / fullWidth, height / fullHeight);
+    const translate = [fullWidth / 2 - scale * midX, fullHeight / 2 - scale * midY];
+
+    svg.transition()
+      .duration(750)
+      .call(zoom.transform, d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale));
+  }, 100);
 }
 
 function createTimeseries() {
