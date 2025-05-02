@@ -1,0 +1,918 @@
+[
+    {
+        "year": 1007,
+        "count": 1
+    },
+    {
+        "year": 1150,
+        "count": 2
+    },
+    {
+        "year": 1221,
+        "count": 1
+    },
+    {
+        "year": 1310,
+        "count": 1
+    },
+    {
+        "year": 1400,
+        "count": 1
+    },
+    {
+        "year": 1409,
+        "count": 1
+    },
+    {
+        "year": 1414,
+        "count": 1
+    },
+    {
+        "year": 1419,
+        "count": 1
+    },
+    {
+        "year": 1433,
+        "count": 1
+    },
+    {
+        "year": 1500,
+        "count": 5
+    },
+    {
+        "year": 1501,
+        "count": 1
+    },
+    {
+        "year": 1600,
+        "count": 17
+    },
+    {
+        "year": 1624,
+        "count": 1
+    },
+    {
+        "year": 1647,
+        "count": 1
+    },
+    {
+        "year": 1692,
+        "count": 1
+    },
+    {
+        "year": 1700,
+        "count": 56
+    },
+    {
+        "year": 1710,
+        "count": 1
+    },
+    {
+        "year": 1723,
+        "count": 1
+    },
+    {
+        "year": 1735,
+        "count": 1
+    },
+    {
+        "year": 1738,
+        "count": 1
+    },
+    {
+        "year": 1740,
+        "count": 1
+    },
+    {
+        "year": 1754,
+        "count": 2
+    },
+    {
+        "year": 1755,
+        "count": 3
+    },
+    {
+        "year": 1760,
+        "count": 1
+    },
+    {
+        "year": 1765,
+        "count": 1
+    },
+    {
+        "year": 1769,
+        "count": 1
+    },
+    {
+        "year": 1771,
+        "count": 1
+    },
+    {
+        "year": 1774,
+        "count": 1
+    },
+    {
+        "year": 1776,
+        "count": 1
+    },
+    {
+        "year": 1778,
+        "count": 1
+    },
+    {
+        "year": 1783,
+        "count": 1
+    },
+    {
+        "year": 1785,
+        "count": 1
+    },
+    {
+        "year": 1787,
+        "count": 2
+    },
+    {
+        "year": 1789,
+        "count": 2
+    },
+    {
+        "year": 1790,
+        "count": 7
+    },
+    {
+        "year": 1791,
+        "count": 1
+    },
+    {
+        "year": 1796,
+        "count": 1
+    },
+    {
+        "year": 1798,
+        "count": 2
+    },
+    {
+        "year": 1800,
+        "count": 369
+    },
+    {
+        "year": 1801,
+        "count": 1
+    },
+    {
+        "year": 1802,
+        "count": 2
+    },
+    {
+        "year": 1807,
+        "count": 1
+    },
+    {
+        "year": 1808,
+        "count": 1
+    },
+    {
+        "year": 1809,
+        "count": 1
+    },
+    {
+        "year": 1810,
+        "count": 2
+    },
+    {
+        "year": 1811,
+        "count": 1
+    },
+    {
+        "year": 1812,
+        "count": 4
+    },
+    {
+        "year": 1813,
+        "count": 1
+    },
+    {
+        "year": 1814,
+        "count": 1
+    },
+    {
+        "year": 1816,
+        "count": 1
+    },
+    {
+        "year": 1817,
+        "count": 1
+    },
+    {
+        "year": 1818,
+        "count": 1
+    },
+    {
+        "year": 1820,
+        "count": 6
+    },
+    {
+        "year": 1825,
+        "count": 2
+    },
+    {
+        "year": 1827,
+        "count": 2
+    },
+    {
+        "year": 1830,
+        "count": 8
+    },
+    {
+        "year": 1831,
+        "count": 1
+    },
+    {
+        "year": 1833,
+        "count": 1
+    },
+    {
+        "year": 1836,
+        "count": 2
+    },
+    {
+        "year": 1837,
+        "count": 4
+    },
+    {
+        "year": 1838,
+        "count": 2
+    },
+    {
+        "year": 1839,
+        "count": 4
+    },
+    {
+        "year": 1840,
+        "count": 10
+    },
+    {
+        "year": 1841,
+        "count": 1
+    },
+    {
+        "year": 1842,
+        "count": 1
+    },
+    {
+        "year": 1843,
+        "count": 1
+    },
+    {
+        "year": 1844,
+        "count": 2
+    },
+    {
+        "year": 1845,
+        "count": 2
+    },
+    {
+        "year": 1846,
+        "count": 1
+    },
+    {
+        "year": 1847,
+        "count": 3
+    },
+    {
+        "year": 1848,
+        "count": 3
+    },
+    {
+        "year": 1849,
+        "count": 5
+    },
+    {
+        "year": 1850,
+        "count": 15
+    },
+    {
+        "year": 1851,
+        "count": 1
+    },
+    {
+        "year": 1852,
+        "count": 2
+    },
+    {
+        "year": 1853,
+        "count": 2
+    },
+    {
+        "year": 1854,
+        "count": 2
+    },
+    {
+        "year": 1855,
+        "count": 1
+    },
+    {
+        "year": 1856,
+        "count": 3
+    },
+    {
+        "year": 1857,
+        "count": 6
+    },
+    {
+        "year": 1858,
+        "count": 3
+    },
+    {
+        "year": 1859,
+        "count": 1
+    },
+    {
+        "year": 1860,
+        "count": 10
+    },
+    {
+        "year": 1861,
+        "count": 5
+    },
+    {
+        "year": 1863,
+        "count": 4
+    },
+    {
+        "year": 1864,
+        "count": 6
+    },
+    {
+        "year": 1865,
+        "count": 2
+    },
+    {
+        "year": 1866,
+        "count": 2
+    },
+    {
+        "year": 1867,
+        "count": 3
+    },
+    {
+        "year": 1868,
+        "count": 2
+    },
+    {
+        "year": 1869,
+        "count": 2
+    },
+    {
+        "year": 1870,
+        "count": 9
+    },
+    {
+        "year": 1871,
+        "count": 1
+    },
+    {
+        "year": 1872,
+        "count": 1
+    },
+    {
+        "year": 1873,
+        "count": 3
+    },
+    {
+        "year": 1874,
+        "count": 2
+    },
+    {
+        "year": 1875,
+        "count": 1
+    },
+    {
+        "year": 1876,
+        "count": 4
+    },
+    {
+        "year": 1877,
+        "count": 2
+    },
+    {
+        "year": 1878,
+        "count": 1
+    },
+    {
+        "year": 1879,
+        "count": 2
+    },
+    {
+        "year": 1880,
+        "count": 23
+    },
+    {
+        "year": 1882,
+        "count": 2
+    },
+    {
+        "year": 1883,
+        "count": 4
+    },
+    {
+        "year": 1884,
+        "count": 1
+    },
+    {
+        "year": 1885,
+        "count": 1
+    },
+    {
+        "year": 1886,
+        "count": 8
+    },
+    {
+        "year": 1887,
+        "count": 5
+    },
+    {
+        "year": 1888,
+        "count": 2
+    },
+    {
+        "year": 1889,
+        "count": 4
+    },
+    {
+        "year": 1890,
+        "count": 15
+    },
+    {
+        "year": 1891,
+        "count": 2
+    },
+    {
+        "year": 1892,
+        "count": 4
+    },
+    {
+        "year": 1893,
+        "count": 3
+    },
+    {
+        "year": 1894,
+        "count": 3
+    },
+    {
+        "year": 1895,
+        "count": 1
+    },
+    {
+        "year": 1896,
+        "count": 6
+    },
+    {
+        "year": 1897,
+        "count": 2
+    },
+    {
+        "year": 1898,
+        "count": 8
+    },
+    {
+        "year": 1899,
+        "count": 1
+    },
+    {
+        "year": 1900,
+        "count": 191
+    },
+    {
+        "year": 1901,
+        "count": 7
+    },
+    {
+        "year": 1902,
+        "count": 8
+    },
+    {
+        "year": 1903,
+        "count": 10
+    },
+    {
+        "year": 1904,
+        "count": 7
+    },
+    {
+        "year": 1905,
+        "count": 4
+    },
+    {
+        "year": 1906,
+        "count": 4
+    },
+    {
+        "year": 1907,
+        "count": 7
+    },
+    {
+        "year": 1908,
+        "count": 5
+    },
+    {
+        "year": 1909,
+        "count": 10
+    },
+    {
+        "year": 1910,
+        "count": 11
+    },
+    {
+        "year": 1911,
+        "count": 6
+    },
+    {
+        "year": 1912,
+        "count": 6
+    },
+    {
+        "year": 1913,
+        "count": 2
+    },
+    {
+        "year": 1914,
+        "count": 3
+    },
+    {
+        "year": 1915,
+        "count": 8
+    },
+    {
+        "year": 1916,
+        "count": 3
+    },
+    {
+        "year": 1917,
+        "count": 2
+    },
+    {
+        "year": 1918,
+        "count": 8
+    },
+    {
+        "year": 1919,
+        "count": 2
+    },
+    {
+        "year": 1920,
+        "count": 83
+    },
+    {
+        "year": 1921,
+        "count": 1
+    },
+    {
+        "year": 1922,
+        "count": 7
+    },
+    {
+        "year": 1923,
+        "count": 5
+    },
+    {
+        "year": 1924,
+        "count": 5
+    },
+    {
+        "year": 1925,
+        "count": 6
+    },
+    {
+        "year": 1926,
+        "count": 9
+    },
+    {
+        "year": 1927,
+        "count": 12
+    },
+    {
+        "year": 1928,
+        "count": 3
+    },
+    {
+        "year": 1929,
+        "count": 10
+    },
+    {
+        "year": 1930,
+        "count": 74
+    },
+    {
+        "year": 1931,
+        "count": 3
+    },
+    {
+        "year": 1932,
+        "count": 5
+    },
+    {
+        "year": 1933,
+        "count": 3
+    },
+    {
+        "year": 1934,
+        "count": 2
+    },
+    {
+        "year": 1935,
+        "count": 2
+    },
+    {
+        "year": 1936,
+        "count": 7
+    },
+    {
+        "year": 1937,
+        "count": 3
+    },
+    {
+        "year": 1938,
+        "count": 7
+    },
+    {
+        "year": 1939,
+        "count": 3
+    },
+    {
+        "year": 1940,
+        "count": 52
+    },
+    {
+        "year": 1941,
+        "count": 2
+    },
+    {
+        "year": 1942,
+        "count": 5
+    },
+    {
+        "year": 1943,
+        "count": 3
+    },
+    {
+        "year": 1944,
+        "count": 5
+    },
+    {
+        "year": 1945,
+        "count": 3
+    },
+    {
+        "year": 1946,
+        "count": 5
+    },
+    {
+        "year": 1947,
+        "count": 2
+    },
+    {
+        "year": 1948,
+        "count": 4
+    },
+    {
+        "year": 1949,
+        "count": 8
+    },
+    {
+        "year": 1950,
+        "count": 99
+    },
+    {
+        "year": 1951,
+        "count": 6
+    },
+    {
+        "year": 1952,
+        "count": 2
+    },
+    {
+        "year": 1953,
+        "count": 6
+    },
+    {
+        "year": 1954,
+        "count": 2
+    },
+    {
+        "year": 1955,
+        "count": 5
+    },
+    {
+        "year": 1956,
+        "count": 2
+    },
+    {
+        "year": 1957,
+        "count": 4
+    },
+    {
+        "year": 1958,
+        "count": 5
+    },
+    {
+        "year": 1959,
+        "count": 3
+    },
+    {
+        "year": 1960,
+        "count": 75
+    },
+    {
+        "year": 1961,
+        "count": 2
+    },
+    {
+        "year": 1962,
+        "count": 6
+    },
+    {
+        "year": 1963,
+        "count": 7
+    },
+    {
+        "year": 1964,
+        "count": 3
+    },
+    {
+        "year": 1965,
+        "count": 2
+    },
+    {
+        "year": 1966,
+        "count": 2
+    },
+    {
+        "year": 1967,
+        "count": 7
+    },
+    {
+        "year": 1968,
+        "count": 10
+    },
+    {
+        "year": 1969,
+        "count": 7
+    },
+    {
+        "year": 1970,
+        "count": 80
+    },
+    {
+        "year": 1971,
+        "count": 3
+    },
+    {
+        "year": 1972,
+        "count": 8
+    },
+    {
+        "year": 1973,
+        "count": 7
+    },
+    {
+        "year": 1974,
+        "count": 10
+    },
+    {
+        "year": 1975,
+        "count": 8
+    },
+    {
+        "year": 1976,
+        "count": 7
+    },
+    {
+        "year": 1977,
+        "count": 11
+    },
+    {
+        "year": 1978,
+        "count": 15
+    },
+    {
+        "year": 1979,
+        "count": 13
+    },
+    {
+        "year": 1980,
+        "count": 87
+    },
+    {
+        "year": 1981,
+        "count": 5
+    },
+    {
+        "year": 1982,
+        "count": 10
+    },
+    {
+        "year": 1983,
+        "count": 6
+    },
+    {
+        "year": 1984,
+        "count": 5
+    },
+    {
+        "year": 1985,
+        "count": 15
+    },
+    {
+        "year": 1986,
+        "count": 9
+    },
+    {
+        "year": 1987,
+        "count": 14
+    },
+    {
+        "year": 1988,
+        "count": 11
+    },
+    {
+        "year": 1989,
+        "count": 17
+    },
+    {
+        "year": 1990,
+        "count": 50
+    },
+    {
+        "year": 1991,
+        "count": 4
+    },
+    {
+        "year": 1992,
+        "count": 14
+    },
+    {
+        "year": 1993,
+        "count": 17
+    },
+    {
+        "year": 1994,
+        "count": 13
+    },
+    {
+        "year": 1995,
+        "count": 22
+    },
+    {
+        "year": 1996,
+        "count": 12
+    },
+    {
+        "year": 1997,
+        "count": 14
+    },
+    {
+        "year": 1998,
+        "count": 19
+    },
+    {
+        "year": 1999,
+        "count": 26
+    },
+    {
+        "year": 2000,
+        "count": 20
+    },
+    {
+        "year": 2001,
+        "count": 25
+    },
+    {
+        "year": 2002,
+        "count": 23
+    },
+    {
+        "year": 2003,
+        "count": 98
+    },
+    {
+        "year": 2004,
+        "count": 160
+    },
+    {
+        "year": 2005,
+        "count": 116
+    },
+    {
+        "year": 2006,
+        "count": 52
+    },
+    {
+        "year": 2007,
+        "count": 124
+    },
+    {
+        "year": 2008,
+        "count": 149
+    }
+]

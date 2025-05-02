@@ -1,0 +1,3461 @@
+{
+  "nodes": [
+    {
+      "id": "1"
+    },
+    {
+      "id": "1800"
+    },
+    {
+      "id": "1950"
+    },
+    {
+      "id": "1970"
+    },
+    {
+      "id": "2"
+    },
+    {
+      "id": "2nd"
+    },
+    {
+      "id": "3"
+    },
+    {
+      "id": "3rd"
+    },
+    {
+      "id": "4"
+    },
+    {
+      "id": "5"
+    },
+    {
+      "id": "50"
+    },
+    {
+      "id": "6"
+    },
+    {
+      "id": "Halloween"
+    },
+    {
+      "id": "Indian"
+    },
+    {
+      "id": "Indians"
+    },
+    {
+      "id": "Inn"
+    },
+    {
+      "id": "March 2008"
+    },
+    {
+      "id": "One"
+    },
+    {
+      "id": "One night"
+    },
+    {
+      "id": "Rumor"
+    },
+    {
+      "id": "Two"
+    },
+    {
+      "id": "creepy"
+    },
+    {
+      "id": "every night"
+    },
+    {
+      "id": "first"
+    },
+    {
+      "id": "five"
+    },
+    {
+      "id": "four"
+    },
+    {
+      "id": "fourth"
+    },
+    {
+      "id": "late at night"
+    },
+    {
+      "id": "many years"
+    },
+    {
+      "id": "many years ago"
+    },
+    {
+      "id": "midnight"
+    },
+    {
+      "id": "night"
+    },
+    {
+      "id": "nights"
+    },
+    {
+      "id": "one"
+    },
+    {
+      "id": "one day"
+    },
+    {
+      "id": "one night"
+    },
+    {
+      "id": "second"
+    },
+    {
+      "id": "the Civil War"
+    },
+    {
+      "id": "the day"
+    },
+    {
+      "id": "the early 1900's"
+    },
+    {
+      "id": "the late 1800's"
+    },
+    {
+      "id": "the next day"
+    },
+    {
+      "id": "the night"
+    },
+    {
+      "id": "the years"
+    },
+    {
+      "id": "third"
+    },
+    {
+      "id": "this day"
+    },
+    {
+      "id": "three"
+    },
+    {
+      "id": "today"
+    },
+    {
+      "id": "two"
+    },
+    {
+      "id": "years"
+    }
+  ],
+  "links": [
+    {
+      "source": "late at night",
+      "target": "the night",
+      "value": 4
+    },
+    {
+      "source": "late at night",
+      "target": "one",
+      "value": 40
+    },
+    {
+      "source": "1970",
+      "target": "One night",
+      "value": 2
+    },
+    {
+      "source": "1970",
+      "target": "first",
+      "value": 4
+    },
+    {
+      "source": "1970",
+      "target": "one",
+      "value": 10
+    },
+    {
+      "source": "1970",
+      "target": "today",
+      "value": 2
+    },
+    {
+      "source": "1970",
+      "target": "two",
+      "value": 7
+    },
+    {
+      "source": "One night",
+      "target": "first",
+      "value": 3
+    },
+    {
+      "source": "One night",
+      "target": "one",
+      "value": 11
+    },
+    {
+      "source": "One night",
+      "target": "today",
+      "value": 2
+    },
+    {
+      "source": "One night",
+      "target": "two",
+      "value": 7
+    },
+    {
+      "source": "first",
+      "target": "one",
+      "value": 77
+    },
+    {
+      "source": "first",
+      "target": "today",
+      "value": 7
+    },
+    {
+      "source": "first",
+      "target": "two",
+      "value": 62
+    },
+    {
+      "source": "one",
+      "target": "today",
+      "value": 15
+    },
+    {
+      "source": "one",
+      "target": "two",
+      "value": 113
+    },
+    {
+      "source": "today",
+      "target": "two",
+      "value": 14
+    },
+    {
+      "source": "1800",
+      "target": "midnight",
+      "value": 5
+    },
+    {
+      "source": "1800",
+      "target": "night",
+      "value": 25
+    },
+    {
+      "source": "1800",
+      "target": "three",
+      "value": 4
+    },
+    {
+      "source": "1800",
+      "target": "today",
+      "value": 3
+    },
+    {
+      "source": "midnight",
+      "target": "night",
+      "value": 14
+    },
+    {
+      "source": "midnight",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "midnight",
+      "target": "today",
+      "value": 2
+    },
+    {
+      "source": "night",
+      "target": "three",
+      "value": 33
+    },
+    {
+      "source": "night",
+      "target": "today",
+      "value": 18
+    },
+    {
+      "source": "three",
+      "target": "today",
+      "value": 3
+    },
+    {
+      "source": "one night",
+      "target": "the night",
+      "value": 6
+    },
+    {
+      "source": "first",
+      "target": "one day",
+      "value": 4
+    },
+    {
+      "source": "March 2008",
+      "target": "three",
+      "value": 2
+    },
+    {
+      "source": "One",
+      "target": "one",
+      "value": 102
+    },
+    {
+      "source": "creepy",
+      "target": "midnight",
+      "value": 4
+    },
+    {
+      "source": "creepy",
+      "target": "one",
+      "value": 11
+    },
+    {
+      "source": "midnight",
+      "target": "one",
+      "value": 15
+    },
+    {
+      "source": "2",
+      "target": "today",
+      "value": 4
+    },
+    {
+      "source": "one",
+      "target": "one day",
+      "value": 8
+    },
+    {
+      "source": "first",
+      "target": "second",
+      "value": 69
+    },
+    {
+      "source": "first",
+      "target": "the years",
+      "value": 9
+    },
+    {
+      "source": "one",
+      "target": "second",
+      "value": 68
+    },
+    {
+      "source": "one",
+      "target": "the years",
+      "value": 20
+    },
+    {
+      "source": "second",
+      "target": "the years",
+      "value": 7
+    },
+    {
+      "source": "2",
+      "target": "night",
+      "value": 23
+    },
+    {
+      "source": "3",
+      "target": "Indians",
+      "value": 3
+    },
+    {
+      "source": "3",
+      "target": "night",
+      "value": 27
+    },
+    {
+      "source": "Indians",
+      "target": "night",
+      "value": 26
+    },
+    {
+      "source": "Indian",
+      "target": "one night",
+      "value": 7
+    },
+    {
+      "source": "Indian",
+      "target": "the day",
+      "value": 3
+    },
+    {
+      "source": "one night",
+      "target": "the day",
+      "value": 2
+    },
+    {
+      "source": "One",
+      "target": "two",
+      "value": 75
+    },
+    {
+      "source": "night",
+      "target": "the night",
+      "value": 34
+    },
+    {
+      "source": "three",
+      "target": "two",
+      "value": 38
+    },
+    {
+      "source": "one",
+      "target": "third",
+      "value": 43
+    },
+    {
+      "source": "One",
+      "target": "first",
+      "value": 45
+    },
+    {
+      "source": "night",
+      "target": "two",
+      "value": 90
+    },
+    {
+      "source": "fourth",
+      "target": "third",
+      "value": 9
+    },
+    {
+      "source": "fourth",
+      "target": "two",
+      "value": 11
+    },
+    {
+      "source": "third",
+      "target": "two",
+      "value": 31
+    },
+    {
+      "source": "one day",
+      "target": "the Civil War",
+      "value": 2
+    },
+    {
+      "source": "one day",
+      "target": "today",
+      "value": 2
+    },
+    {
+      "source": "the Civil War",
+      "target": "today",
+      "value": 3
+    },
+    {
+      "source": "night",
+      "target": "the late 1800's",
+      "value": 11
+    },
+    {
+      "source": "many years",
+      "target": "night",
+      "value": 16
+    },
+    {
+      "source": "Two",
+      "target": "one",
+      "value": 12
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "value": 26
+    },
+    {
+      "source": "2",
+      "target": "Indian",
+      "value": 4
+    },
+    {
+      "source": "2",
+      "target": "one",
+      "value": 40
+    },
+    {
+      "source": "3",
+      "target": "Indian",
+      "value": 4
+    },
+    {
+      "source": "3",
+      "target": "one",
+      "value": 22
+    },
+    {
+      "source": "Indian",
+      "target": "one",
+      "value": 28
+    },
+    {
+      "source": "night",
+      "target": "one",
+      "value": 142
+    },
+    {
+      "source": "3",
+      "target": "3rd",
+      "value": 7
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "value": 15
+    },
+    {
+      "source": "3",
+      "target": "late at night",
+      "value": 8
+    },
+    {
+      "source": "3rd",
+      "target": "4",
+      "value": 3
+    },
+    {
+      "source": "3rd",
+      "target": "late at night",
+      "value": 5
+    },
+    {
+      "source": "4",
+      "target": "late at night",
+      "value": 5
+    },
+    {
+      "source": "second",
+      "target": "third",
+      "value": 60
+    },
+    {
+      "source": "second",
+      "target": "three",
+      "value": 17
+    },
+    {
+      "source": "third",
+      "target": "three",
+      "value": 24
+    },
+    {
+      "source": "one",
+      "target": "the night",
+      "value": 31
+    },
+    {
+      "source": "1",
+      "target": "One",
+      "value": 6
+    },
+    {
+      "source": "One",
+      "target": "One night",
+      "value": 6
+    },
+    {
+      "source": "2",
+      "target": "March 2008",
+      "value": 2
+    },
+    {
+      "source": "One",
+      "target": "five",
+      "value": 6
+    },
+    {
+      "source": "One",
+      "target": "four",
+      "value": 6
+    },
+    {
+      "source": "One",
+      "target": "night",
+      "value": 89
+    },
+    {
+      "source": "five",
+      "target": "four",
+      "value": 9
+    },
+    {
+      "source": "five",
+      "target": "night",
+      "value": 9
+    },
+    {
+      "source": "four",
+      "target": "night",
+      "value": 17
+    },
+    {
+      "source": "night",
+      "target": "second",
+      "value": 60
+    },
+    {
+      "source": "1",
+      "target": "2",
+      "value": 14
+    },
+    {
+      "source": "1",
+      "target": "3",
+      "value": 10
+    },
+    {
+      "source": "1",
+      "target": "first",
+      "value": 7
+    },
+    {
+      "source": "1",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "1",
+      "target": "two",
+      "value": 9
+    },
+    {
+      "source": "2",
+      "target": "One",
+      "value": 18
+    },
+    {
+      "source": "2",
+      "target": "first",
+      "value": 15
+    },
+    {
+      "source": "2",
+      "target": "this day",
+      "value": 15
+    },
+    {
+      "source": "2",
+      "target": "two",
+      "value": 23
+    },
+    {
+      "source": "3",
+      "target": "One",
+      "value": 16
+    },
+    {
+      "source": "3",
+      "target": "first",
+      "value": 15
+    },
+    {
+      "source": "3",
+      "target": "this day",
+      "value": 5
+    },
+    {
+      "source": "3",
+      "target": "two",
+      "value": 17
+    },
+    {
+      "source": "One",
+      "target": "this day",
+      "value": 20
+    },
+    {
+      "source": "first",
+      "target": "this day",
+      "value": 10
+    },
+    {
+      "source": "this day",
+      "target": "two",
+      "value": 19
+    },
+    {
+      "source": "four",
+      "target": "two",
+      "value": 12
+    },
+    {
+      "source": "Indians",
+      "target": "Two",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "5",
+      "value": 5
+    },
+    {
+      "source": "Indian",
+      "target": "Indians",
+      "value": 32
+    },
+    {
+      "source": "Indian",
+      "target": "first",
+      "value": 8
+    },
+    {
+      "source": "Indian",
+      "target": "night",
+      "value": 56
+    },
+    {
+      "source": "Indian",
+      "target": "two",
+      "value": 18
+    },
+    {
+      "source": "Indians",
+      "target": "first",
+      "value": 6
+    },
+    {
+      "source": "Indians",
+      "target": "two",
+      "value": 9
+    },
+    {
+      "source": "first",
+      "target": "night",
+      "value": 60
+    },
+    {
+      "source": "Two",
+      "target": "two",
+      "value": 12
+    },
+    {
+      "source": "3",
+      "target": "the next day",
+      "value": 5
+    },
+    {
+      "source": "3",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "One",
+      "target": "the next day",
+      "value": 3
+    },
+    {
+      "source": "One",
+      "target": "years",
+      "value": 7
+    },
+    {
+      "source": "the next day",
+      "target": "years",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "One night",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "the night",
+      "value": 3
+    },
+    {
+      "source": "One night",
+      "target": "the night",
+      "value": 4
+    },
+    {
+      "source": "the night",
+      "target": "this day",
+      "value": 6
+    },
+    {
+      "source": "night",
+      "target": "the day",
+      "value": 51
+    },
+    {
+      "source": "6",
+      "target": "One",
+      "value": 5
+    },
+    {
+      "source": "6",
+      "target": "today",
+      "value": 2
+    },
+    {
+      "source": "One",
+      "target": "today",
+      "value": 8
+    },
+    {
+      "source": "one",
+      "target": "this day",
+      "value": 36
+    },
+    {
+      "source": "2",
+      "target": "one night",
+      "value": 3
+    },
+    {
+      "source": "3",
+      "target": "one night",
+      "value": 6
+    },
+    {
+      "source": "night",
+      "target": "one night",
+      "value": 27
+    },
+    {
+      "source": "one night",
+      "target": "two",
+      "value": 16
+    },
+    {
+      "source": "five",
+      "target": "second",
+      "value": 3
+    },
+    {
+      "source": "five",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "4",
+      "target": "night",
+      "value": 6
+    },
+    {
+      "source": "4",
+      "target": "one",
+      "value": 13
+    },
+    {
+      "source": "4",
+      "target": "one night",
+      "value": 4
+    },
+    {
+      "source": "4",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "4",
+      "target": "two",
+      "value": 10
+    },
+    {
+      "source": "one",
+      "target": "one night",
+      "value": 29
+    },
+    {
+      "source": "one",
+      "target": "three",
+      "value": 49
+    },
+    {
+      "source": "one night",
+      "target": "three",
+      "value": 8
+    },
+    {
+      "source": "2nd",
+      "target": "3rd",
+      "value": 13
+    },
+    {
+      "source": "One",
+      "target": "the night",
+      "value": 19
+    },
+    {
+      "source": "the night",
+      "target": "two",
+      "value": 15
+    },
+    {
+      "source": "1800",
+      "target": "every night",
+      "value": 3
+    },
+    {
+      "source": "1800",
+      "target": "this day",
+      "value": 7
+    },
+    {
+      "source": "every night",
+      "target": "this day",
+      "value": 2
+    },
+    {
+      "source": "One",
+      "target": "second",
+      "value": 31
+    },
+    {
+      "source": "second",
+      "target": "the night",
+      "value": 10
+    },
+    {
+      "source": "first",
+      "target": "third",
+      "value": 39
+    },
+    {
+      "source": "creepy",
+      "target": "night",
+      "value": 15
+    },
+    {
+      "source": "One",
+      "target": "every night",
+      "value": 5
+    },
+    {
+      "source": "One",
+      "target": "many years",
+      "value": 6
+    },
+    {
+      "source": "every night",
+      "target": "night",
+      "value": 6
+    },
+    {
+      "source": "1",
+      "target": "2nd",
+      "value": 4
+    },
+    {
+      "source": "1",
+      "target": "3rd",
+      "value": 3
+    },
+    {
+      "source": "1",
+      "target": "second",
+      "value": 4
+    },
+    {
+      "source": "2nd",
+      "target": "3",
+      "value": 6
+    },
+    {
+      "source": "2nd",
+      "target": "second",
+      "value": 15
+    },
+    {
+      "source": "3",
+      "target": "second",
+      "value": 16
+    },
+    {
+      "source": "3rd",
+      "target": "second",
+      "value": 8
+    },
+    {
+      "source": "night",
+      "target": "this day",
+      "value": 24
+    },
+    {
+      "source": "every night",
+      "target": "years",
+      "value": 2
+    },
+    {
+      "source": "Inn",
+      "target": "the night",
+      "value": 3
+    },
+    {
+      "source": "the day",
+      "target": "today",
+      "value": 3
+    },
+    {
+      "source": "today",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "One",
+      "target": "three",
+      "value": 18
+    },
+    {
+      "source": "2",
+      "target": "2nd",
+      "value": 6
+    },
+    {
+      "source": "2nd",
+      "target": "One",
+      "value": 12
+    },
+    {
+      "source": "2nd",
+      "target": "first",
+      "value": 8
+    },
+    {
+      "source": "2nd",
+      "target": "night",
+      "value": 8
+    },
+    {
+      "source": "Halloween",
+      "target": "one",
+      "value": 11
+    },
+    {
+      "source": "Indians",
+      "target": "one",
+      "value": 18
+    },
+    {
+      "source": "Indian",
+      "target": "second",
+      "value": 6
+    },
+    {
+      "source": "second",
+      "target": "the day",
+      "value": 4
+    },
+    {
+      "source": "2",
+      "target": "four",
+      "value": 5
+    },
+    {
+      "source": "five",
+      "target": "two",
+      "value": 8
+    },
+    {
+      "source": "one day",
+      "target": "two",
+      "value": 5
+    },
+    {
+      "source": "fourth",
+      "target": "night",
+      "value": 6
+    },
+    {
+      "source": "fourth",
+      "target": "second",
+      "value": 5
+    },
+    {
+      "source": "Halloween",
+      "target": "midnight",
+      "value": 7
+    },
+    {
+      "source": "50",
+      "target": "two",
+      "value": 5
+    },
+    {
+      "source": "Two",
+      "target": "first",
+      "value": 5
+    },
+    {
+      "source": "Two",
+      "target": "the night",
+      "value": 5
+    },
+    {
+      "source": "Two",
+      "target": "the years",
+      "value": 2
+    },
+    {
+      "source": "Two",
+      "target": "third",
+      "value": 5
+    },
+    {
+      "source": "first",
+      "target": "the night",
+      "value": 11
+    },
+    {
+      "source": "the night",
+      "target": "the years",
+      "value": 4
+    },
+    {
+      "source": "the night",
+      "target": "third",
+      "value": 3
+    },
+    {
+      "source": "the years",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "every night",
+      "target": "the next day",
+      "value": 2
+    },
+    {
+      "source": "every night",
+      "target": "three",
+      "value": 2
+    },
+    {
+      "source": "the next day",
+      "target": "three",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "Indian",
+      "value": 6
+    },
+    {
+      "source": "Rumor",
+      "target": "night",
+      "value": 16
+    },
+    {
+      "source": "night",
+      "target": "third",
+      "value": 37
+    },
+    {
+      "source": "2",
+      "target": "3rd",
+      "value": 5
+    },
+    {
+      "source": "3rd",
+      "target": "this day",
+      "value": 2
+    },
+    {
+      "source": "Indian",
+      "target": "this day",
+      "value": 8
+    },
+    {
+      "source": "1800",
+      "target": "2",
+      "value": 3
+    },
+    {
+      "source": "1800",
+      "target": "second",
+      "value": 11
+    },
+    {
+      "source": "2",
+      "target": "second",
+      "value": 12
+    },
+    {
+      "source": "1800",
+      "target": "One",
+      "value": 8
+    },
+    {
+      "source": "1800",
+      "target": "one night",
+      "value": 3
+    },
+    {
+      "source": "Halloween",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "3",
+      "target": "Halloween",
+      "value": 2
+    },
+    {
+      "source": "3",
+      "target": "three",
+      "value": 12
+    },
+    {
+      "source": "Indian",
+      "target": "One",
+      "value": 13
+    },
+    {
+      "source": "3",
+      "target": "third",
+      "value": 12
+    },
+    {
+      "source": "second",
+      "target": "two",
+      "value": 42
+    },
+    {
+      "source": "Rumor",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "3",
+      "target": "Rumor",
+      "value": 3
+    },
+    {
+      "source": "March 2008",
+      "target": "night",
+      "value": 6
+    },
+    {
+      "source": "two",
+      "target": "years",
+      "value": 6
+    },
+    {
+      "source": "first",
+      "target": "the early 1900's",
+      "value": 9
+    },
+    {
+      "source": "the early 1900's",
+      "target": "third",
+      "value": 3
+    },
+    {
+      "source": "one night",
+      "target": "second",
+      "value": 7
+    },
+    {
+      "source": "one night",
+      "target": "the next day",
+      "value": 5
+    },
+    {
+      "source": "1",
+      "target": "late at night",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "late at night",
+      "value": 8
+    },
+    {
+      "source": "2",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "2nd",
+      "target": "late at night",
+      "value": 7
+    },
+    {
+      "source": "2nd",
+      "target": "this day",
+      "value": 5
+    },
+    {
+      "source": "2nd",
+      "target": "two",
+      "value": 7
+    },
+    {
+      "source": "2nd",
+      "target": "years",
+      "value": 2
+    },
+    {
+      "source": "late at night",
+      "target": "second",
+      "value": 15
+    },
+    {
+      "source": "late at night",
+      "target": "this day",
+      "value": 8
+    },
+    {
+      "source": "late at night",
+      "target": "two",
+      "value": 24
+    },
+    {
+      "source": "late at night",
+      "target": "years",
+      "value": 6
+    },
+    {
+      "source": "second",
+      "target": "this day",
+      "value": 7
+    },
+    {
+      "source": "second",
+      "target": "years",
+      "value": 9
+    },
+    {
+      "source": "this day",
+      "target": "years",
+      "value": 5
+    },
+    {
+      "source": "late at night",
+      "target": "many years ago",
+      "value": 6
+    },
+    {
+      "source": "1800",
+      "target": "the night",
+      "value": 2
+    },
+    {
+      "source": "Halloween",
+      "target": "One",
+      "value": 10
+    },
+    {
+      "source": "Halloween",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "1970",
+      "target": "the years",
+      "value": 2
+    },
+    {
+      "source": "3rd",
+      "target": "the years",
+      "value": 4
+    },
+    {
+      "source": "late at night",
+      "target": "night",
+      "value": 34
+    },
+    {
+      "source": "late at night",
+      "target": "the early 1900's",
+      "value": 6
+    },
+    {
+      "source": "night",
+      "target": "the early 1900's",
+      "value": 14
+    },
+    {
+      "source": "one",
+      "target": "the early 1900's",
+      "value": 15
+    },
+    {
+      "source": "first",
+      "target": "the Civil War",
+      "value": 4
+    },
+    {
+      "source": "night",
+      "target": "the Civil War",
+      "value": 17
+    },
+    {
+      "source": "3rd",
+      "target": "one",
+      "value": 19
+    },
+    {
+      "source": "3rd",
+      "target": "two",
+      "value": 8
+    },
+    {
+      "source": "many years ago",
+      "target": "night",
+      "value": 16
+    },
+    {
+      "source": "second",
+      "target": "the early 1900's",
+      "value": 4
+    },
+    {
+      "source": "night",
+      "target": "the years",
+      "value": 15
+    },
+    {
+      "source": "50",
+      "target": "first",
+      "value": 3
+    },
+    {
+      "source": "50",
+      "target": "night",
+      "value": 2
+    },
+    {
+      "source": "50",
+      "target": "today",
+      "value": 2
+    },
+    {
+      "source": "March 2008",
+      "target": "one",
+      "value": 3
+    },
+    {
+      "source": "March 2008",
+      "target": "two",
+      "value": 3
+    },
+    {
+      "source": "the early 1900's",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "five",
+      "target": "three",
+      "value": 6
+    },
+    {
+      "source": "One",
+      "target": "one night",
+      "value": 12
+    },
+    {
+      "source": "One",
+      "target": "the early 1900's",
+      "value": 6
+    },
+    {
+      "source": "Indian",
+      "target": "late at night",
+      "value": 9
+    },
+    {
+      "source": "Indian",
+      "target": "the Civil War",
+      "value": 2
+    },
+    {
+      "source": "late at night",
+      "target": "the Civil War",
+      "value": 3
+    },
+    {
+      "source": "one",
+      "target": "the Civil War",
+      "value": 8
+    },
+    {
+      "source": "Indian",
+      "target": "Rumor",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "midnight",
+      "value": 5
+    },
+    {
+      "source": "1800",
+      "target": "creepy",
+      "value": 2
+    },
+    {
+      "source": "one",
+      "target": "the day",
+      "value": 23
+    },
+    {
+      "source": "the day",
+      "target": "this day",
+      "value": 4
+    },
+    {
+      "source": "2nd",
+      "target": "third",
+      "value": 4
+    },
+    {
+      "source": "1800",
+      "target": "the day",
+      "value": 3
+    },
+    {
+      "source": "midnight",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "One",
+      "target": "third",
+      "value": 26
+    },
+    {
+      "source": "first",
+      "target": "one night",
+      "value": 12
+    },
+    {
+      "source": "one night",
+      "target": "third",
+      "value": 8
+    },
+    {
+      "source": "first",
+      "target": "years",
+      "value": 7
+    },
+    {
+      "source": "night",
+      "target": "years",
+      "value": 22
+    },
+    {
+      "source": "many years ago",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "4",
+      "target": "One",
+      "value": 7
+    },
+    {
+      "source": "4",
+      "target": "the late 1800's",
+      "value": 3
+    },
+    {
+      "source": "4",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "One",
+      "target": "the late 1800's",
+      "value": 6
+    },
+    {
+      "source": "One",
+      "target": "the years",
+      "value": 16
+    },
+    {
+      "source": "One",
+      "target": "late at night",
+      "value": 27
+    },
+    {
+      "source": "first",
+      "target": "late at night",
+      "value": 17
+    },
+    {
+      "source": "Inn",
+      "target": "One",
+      "value": 7
+    },
+    {
+      "source": "Inn",
+      "target": "first",
+      "value": 5
+    },
+    {
+      "source": "Inn",
+      "target": "one",
+      "value": 11
+    },
+    {
+      "source": "One",
+      "target": "the day",
+      "value": 11
+    },
+    {
+      "source": "first",
+      "target": "the day",
+      "value": 10
+    },
+    {
+      "source": "the day",
+      "target": "the night",
+      "value": 7
+    },
+    {
+      "source": "3",
+      "target": "midnight",
+      "value": 7
+    },
+    {
+      "source": "6",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "Rumor",
+      "value": 2
+    },
+    {
+      "source": "Indians",
+      "target": "second",
+      "value": 4
+    },
+    {
+      "source": "Two",
+      "target": "night",
+      "value": 6
+    },
+    {
+      "source": "One",
+      "target": "creepy",
+      "value": 9
+    },
+    {
+      "source": "night",
+      "target": "one day",
+      "value": 11
+    },
+    {
+      "source": "Indians",
+      "target": "years",
+      "value": 4
+    },
+    {
+      "source": "many years ago",
+      "target": "third",
+      "value": 7
+    },
+    {
+      "source": "one day",
+      "target": "this day",
+      "value": 4
+    },
+    {
+      "source": "One",
+      "target": "fourth",
+      "value": 11
+    },
+    {
+      "source": "third",
+      "target": "this day",
+      "value": 5
+    },
+    {
+      "source": "the day",
+      "target": "two",
+      "value": 12
+    },
+    {
+      "source": "1970",
+      "target": "this day",
+      "value": 5
+    },
+    {
+      "source": "Indian",
+      "target": "the night",
+      "value": 6
+    },
+    {
+      "source": "March 2008",
+      "target": "One",
+      "value": 4
+    },
+    {
+      "source": "Two",
+      "target": "three",
+      "value": 6
+    },
+    {
+      "source": "first",
+      "target": "three",
+      "value": 21
+    },
+    {
+      "source": "four",
+      "target": "fourth",
+      "value": 3
+    },
+    {
+      "source": "four",
+      "target": "one",
+      "value": 19
+    },
+    {
+      "source": "four",
+      "target": "the years",
+      "value": 2
+    },
+    {
+      "source": "fourth",
+      "target": "one",
+      "value": 12
+    },
+    {
+      "source": "the years",
+      "target": "two",
+      "value": 12
+    },
+    {
+      "source": "2",
+      "target": "three",
+      "value": 6
+    },
+    {
+      "source": "1950",
+      "target": "One",
+      "value": 6
+    },
+    {
+      "source": "1950",
+      "target": "late at night",
+      "value": 8
+    },
+    {
+      "source": "1950",
+      "target": "one",
+      "value": 14
+    },
+    {
+      "source": "1950",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "1950",
+      "target": "two",
+      "value": 10
+    },
+    {
+      "source": "late at night",
+      "target": "the late 1800's",
+      "value": 3
+    },
+    {
+      "source": "one",
+      "target": "the late 1800's",
+      "value": 8
+    },
+    {
+      "source": "the late 1800's",
+      "target": "two",
+      "value": 4
+    },
+    {
+      "source": "March 2008",
+      "target": "first",
+      "value": 5
+    },
+    {
+      "source": "5",
+      "target": "one",
+      "value": 4
+    },
+    {
+      "source": "2",
+      "target": "Rumor",
+      "value": 9
+    },
+    {
+      "source": "Rumor",
+      "target": "one",
+      "value": 9
+    },
+    {
+      "source": "1",
+      "target": "one",
+      "value": 8
+    },
+    {
+      "source": "2nd",
+      "target": "one",
+      "value": 14
+    },
+    {
+      "source": "late at night",
+      "target": "the years",
+      "value": 11
+    },
+    {
+      "source": "many years",
+      "target": "the night",
+      "value": 3
+    },
+    {
+      "source": "2",
+      "target": "4",
+      "value": 10
+    },
+    {
+      "source": "2",
+      "target": "the early 1900's",
+      "value": 3
+    },
+    {
+      "source": "One",
+      "target": "Two",
+      "value": 12
+    },
+    {
+      "source": "four",
+      "target": "late at night",
+      "value": 3
+    },
+    {
+      "source": "1950",
+      "target": "Indian",
+      "value": 2
+    },
+    {
+      "source": "1950",
+      "target": "three",
+      "value": 2
+    },
+    {
+      "source": "Indian",
+      "target": "three",
+      "value": 9
+    },
+    {
+      "source": "Indian",
+      "target": "March 2008",
+      "value": 4
+    },
+    {
+      "source": "Indian",
+      "target": "many years ago",
+      "value": 2
+    },
+    {
+      "source": "Indians",
+      "target": "March 2008",
+      "value": 2
+    },
+    {
+      "source": "Indians",
+      "target": "late at night",
+      "value": 5
+    },
+    {
+      "source": "March 2008",
+      "target": "late at night",
+      "value": 3
+    },
+    {
+      "source": "March 2008",
+      "target": "many years ago",
+      "value": 2
+    },
+    {
+      "source": "4",
+      "target": "this day",
+      "value": 4
+    },
+    {
+      "source": "one night",
+      "target": "this day",
+      "value": 5
+    },
+    {
+      "source": "creepy",
+      "target": "one night",
+      "value": 3
+    },
+    {
+      "source": "creepy",
+      "target": "second",
+      "value": 3
+    },
+    {
+      "source": "1",
+      "target": "One night",
+      "value": 3
+    },
+    {
+      "source": "1",
+      "target": "night",
+      "value": 4
+    },
+    {
+      "source": "3rd",
+      "target": "first",
+      "value": 7
+    },
+    {
+      "source": "nights",
+      "target": "one",
+      "value": 5
+    },
+    {
+      "source": "nights",
+      "target": "second",
+      "value": 4
+    },
+    {
+      "source": "nights",
+      "target": "third",
+      "value": 3
+    },
+    {
+      "source": "1800",
+      "target": "one",
+      "value": 24
+    },
+    {
+      "source": "1800",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "late at night",
+      "target": "third",
+      "value": 12
+    },
+    {
+      "source": "1800",
+      "target": "one day",
+      "value": 2
+    },
+    {
+      "source": "3rd",
+      "target": "Rumor",
+      "value": 2
+    },
+    {
+      "source": "midnight",
+      "target": "the next day",
+      "value": 2
+    },
+    {
+      "source": "four",
+      "target": "three",
+      "value": 14
+    },
+    {
+      "source": "first",
+      "target": "the next day",
+      "value": 4
+    },
+    {
+      "source": "creepy",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "Halloween",
+      "target": "first",
+      "value": 12
+    },
+    {
+      "source": "Halloween",
+      "target": "two",
+      "value": 10
+    },
+    {
+      "source": "creepy",
+      "target": "first",
+      "value": 4
+    },
+    {
+      "source": "2nd",
+      "target": "4",
+      "value": 5
+    },
+    {
+      "source": "3rd",
+      "target": "One",
+      "value": 6
+    },
+    {
+      "source": "2nd",
+      "target": "the day",
+      "value": 4
+    },
+    {
+      "source": "Indians",
+      "target": "the night",
+      "value": 3
+    },
+    {
+      "source": "every night",
+      "target": "one",
+      "value": 6
+    },
+    {
+      "source": "5",
+      "target": "first",
+      "value": 6
+    },
+    {
+      "source": "Inn",
+      "target": "many years ago",
+      "value": 2
+    },
+    {
+      "source": "first",
+      "target": "many years ago",
+      "value": 6
+    },
+    {
+      "source": "many years ago",
+      "target": "one",
+      "value": 12
+    },
+    {
+      "source": "1800",
+      "target": "two",
+      "value": 7
+    },
+    {
+      "source": "late at night",
+      "target": "nights",
+      "value": 4
+    },
+    {
+      "source": "1950",
+      "target": "4",
+      "value": 5
+    },
+    {
+      "source": "1950",
+      "target": "night",
+      "value": 7
+    },
+    {
+      "source": "midnight",
+      "target": "two",
+      "value": 9
+    },
+    {
+      "source": "first",
+      "target": "midnight",
+      "value": 7
+    },
+    {
+      "source": "midnight",
+      "target": "second",
+      "value": 4
+    },
+    {
+      "source": "creepy",
+      "target": "two",
+      "value": 5
+    },
+    {
+      "source": "2nd",
+      "target": "four",
+      "value": 2
+    },
+    {
+      "source": "Rumor",
+      "target": "first",
+      "value": 5
+    },
+    {
+      "source": "many years ago",
+      "target": "two",
+      "value": 5
+    },
+    {
+      "source": "one",
+      "target": "the next day",
+      "value": 8
+    },
+    {
+      "source": "one day",
+      "target": "second",
+      "value": 2
+    },
+    {
+      "source": "1",
+      "target": "5",
+      "value": 2
+    },
+    {
+      "source": "5",
+      "target": "One",
+      "value": 5
+    },
+    {
+      "source": "3rd",
+      "target": "night",
+      "value": 11
+    },
+    {
+      "source": "one",
+      "target": "years",
+      "value": 19
+    },
+    {
+      "source": "Halloween",
+      "target": "night",
+      "value": 6
+    },
+    {
+      "source": "four",
+      "target": "the early 1900's",
+      "value": 3
+    },
+    {
+      "source": "late at night",
+      "target": "three",
+      "value": 9
+    },
+    {
+      "source": "the early 1900's",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "four",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "this day",
+      "target": "three",
+      "value": 8
+    },
+    {
+      "source": "late at night",
+      "target": "one day",
+      "value": 2
+    },
+    {
+      "source": "One",
+      "target": "Rumor",
+      "value": 6
+    },
+    {
+      "source": "Halloween",
+      "target": "the day",
+      "value": 3
+    },
+    {
+      "source": "the day",
+      "target": "three",
+      "value": 2
+    },
+    {
+      "source": "1950",
+      "target": "one night",
+      "value": 4
+    },
+    {
+      "source": "four",
+      "target": "one night",
+      "value": 2
+    },
+    {
+      "source": "every night",
+      "target": "midnight",
+      "value": 2
+    },
+    {
+      "source": "1950",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "Indians",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "One night",
+      "target": "night",
+      "value": 22
+    },
+    {
+      "source": "1970",
+      "target": "late at night",
+      "value": 3
+    },
+    {
+      "source": "every night",
+      "target": "first",
+      "value": 5
+    },
+    {
+      "source": "four",
+      "target": "midnight",
+      "value": 2
+    },
+    {
+      "source": "Halloween",
+      "target": "many years",
+      "value": 3
+    },
+    {
+      "source": "first",
+      "target": "many years",
+      "value": 6
+    },
+    {
+      "source": "One night",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "Indians",
+      "target": "One night",
+      "value": 3
+    },
+    {
+      "source": "1800",
+      "target": "late at night",
+      "value": 5
+    },
+    {
+      "source": "2",
+      "target": "third",
+      "value": 6
+    },
+    {
+      "source": "first",
+      "target": "the late 1800's",
+      "value": 4
+    },
+    {
+      "source": "the day",
+      "target": "the years",
+      "value": 3
+    },
+    {
+      "source": "1800",
+      "target": "the Civil War",
+      "value": 2
+    },
+    {
+      "source": "Rumor",
+      "target": "late at night",
+      "value": 4
+    },
+    {
+      "source": "One",
+      "target": "nights",
+      "value": 7
+    },
+    {
+      "source": "1970",
+      "target": "Indian",
+      "value": 2
+    },
+    {
+      "source": "Indians",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "1800",
+      "target": "1950",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "Halloween",
+      "value": 2
+    },
+    {
+      "source": "late at night",
+      "target": "many years",
+      "value": 4
+    },
+    {
+      "source": "many years",
+      "target": "one",
+      "value": 11
+    },
+    {
+      "source": "many years",
+      "target": "the years",
+      "value": 4
+    },
+    {
+      "source": "many years",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "the years",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "3",
+      "target": "One night",
+      "value": 2
+    },
+    {
+      "source": "One night",
+      "target": "late at night",
+      "value": 3
+    },
+    {
+      "source": "1970",
+      "target": "One",
+      "value": 4
+    },
+    {
+      "source": "the night",
+      "target": "three",
+      "value": 4
+    },
+    {
+      "source": "late at night",
+      "target": "the next day",
+      "value": 2
+    },
+    {
+      "source": "the next day",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "Two",
+      "target": "nights",
+      "value": 4
+    },
+    {
+      "source": "Two",
+      "target": "second",
+      "value": 5
+    },
+    {
+      "source": "the day",
+      "target": "the early 1900's",
+      "value": 2
+    },
+    {
+      "source": "5",
+      "target": "night",
+      "value": 8
+    },
+    {
+      "source": "1950",
+      "target": "1970",
+      "value": 2
+    },
+    {
+      "source": "1950",
+      "target": "2",
+      "value": 5
+    },
+    {
+      "source": "Indian",
+      "target": "four",
+      "value": 3
+    },
+    {
+      "source": "one night",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "3",
+      "target": "5",
+      "value": 3
+    },
+    {
+      "source": "3",
+      "target": "March 2008",
+      "value": 2
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "value": 4
+    },
+    {
+      "source": "fourth",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "fourth",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "One",
+      "target": "midnight",
+      "value": 3
+    },
+    {
+      "source": "1970",
+      "target": "night",
+      "value": 3
+    },
+    {
+      "source": "3",
+      "target": "four",
+      "value": 4
+    },
+    {
+      "source": "3rd",
+      "target": "four",
+      "value": 2
+    },
+    {
+      "source": "3rd",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "fourth",
+      "target": "today",
+      "value": 4
+    },
+    {
+      "source": "3rd",
+      "target": "fourth",
+      "value": 2
+    },
+    {
+      "source": "One night",
+      "target": "the next day",
+      "value": 3
+    },
+    {
+      "source": "night",
+      "target": "the next day",
+      "value": 8
+    },
+    {
+      "source": "6",
+      "target": "Rumor",
+      "value": 2
+    },
+    {
+      "source": "first",
+      "target": "nights",
+      "value": 2
+    },
+    {
+      "source": "night",
+      "target": "nights",
+      "value": 6
+    },
+    {
+      "source": "creepy",
+      "target": "the night",
+      "value": 3
+    },
+    {
+      "source": "creepy",
+      "target": "third",
+      "value": 4
+    },
+    {
+      "source": "1950",
+      "target": "midnight",
+      "value": 5
+    },
+    {
+      "source": "nights",
+      "target": "two",
+      "value": 6
+    },
+    {
+      "source": "4",
+      "target": "second",
+      "value": 4
+    },
+    {
+      "source": "many years",
+      "target": "two",
+      "value": 8
+    },
+    {
+      "source": "the years",
+      "target": "years",
+      "value": 4
+    },
+    {
+      "source": "1950",
+      "target": "Two",
+      "value": 2
+    },
+    {
+      "source": "five",
+      "target": "one",
+      "value": 8
+    },
+    {
+      "source": "4",
+      "target": "fourth",
+      "value": 2
+    },
+    {
+      "source": "One night",
+      "target": "fourth",
+      "value": 2
+    },
+    {
+      "source": "Indian",
+      "target": "third",
+      "value": 4
+    },
+    {
+      "source": "1800",
+      "target": "the years",
+      "value": 2
+    },
+    {
+      "source": "3rd",
+      "target": "Halloween",
+      "value": 2
+    },
+    {
+      "source": "one day",
+      "target": "the next day",
+      "value": 3
+    },
+    {
+      "source": "2nd",
+      "target": "50",
+      "value": 2
+    },
+    {
+      "source": "Indian",
+      "target": "nights",
+      "value": 2
+    },
+    {
+      "source": "nights",
+      "target": "one night",
+      "value": 2
+    },
+    {
+      "source": "late at night",
+      "target": "midnight",
+      "value": 3
+    },
+    {
+      "source": "midnight",
+      "target": "nights",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "2nd",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "creepy",
+      "value": 2
+    },
+    {
+      "source": "four",
+      "target": "the day",
+      "value": 3
+    },
+    {
+      "source": "1",
+      "target": "Indian",
+      "value": 2
+    },
+    {
+      "source": "1",
+      "target": "one night",
+      "value": 3
+    },
+    {
+      "source": "One night",
+      "target": "one night",
+      "value": 3
+    },
+    {
+      "source": "the next day",
+      "target": "two",
+      "value": 2
+    },
+    {
+      "source": "Indian",
+      "target": "years",
+      "value": 4
+    },
+    {
+      "source": "second",
+      "target": "today",
+      "value": 7
+    },
+    {
+      "source": "One night",
+      "target": "many years",
+      "value": 2
+    },
+    {
+      "source": "One night",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "many years",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "Rumor",
+      "target": "second",
+      "value": 3
+    },
+    {
+      "source": "many years",
+      "target": "second",
+      "value": 5
+    },
+    {
+      "source": "many years",
+      "target": "third",
+      "value": 4
+    },
+    {
+      "source": "4",
+      "target": "the night",
+      "value": 2
+    },
+    {
+      "source": "3",
+      "target": "the day",
+      "value": 4
+    },
+    {
+      "source": "5",
+      "target": "late at night",
+      "value": 2
+    },
+    {
+      "source": "1950",
+      "target": "5",
+      "value": 2
+    },
+    {
+      "source": "5",
+      "target": "fourth",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "the day",
+      "value": 2
+    },
+    {
+      "source": "second",
+      "target": "the Civil War",
+      "value": 6
+    },
+    {
+      "source": "5",
+      "target": "the Civil War",
+      "value": 2
+    },
+    {
+      "source": "Indians",
+      "target": "One",
+      "value": 5
+    },
+    {
+      "source": "Indian",
+      "target": "midnight",
+      "value": 2
+    },
+    {
+      "source": "second",
+      "target": "the late 1800's",
+      "value": 5
+    },
+    {
+      "source": "5",
+      "target": "two",
+      "value": 3
+    },
+    {
+      "source": "the Civil War",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "the Civil War",
+      "target": "two",
+      "value": 9
+    },
+    {
+      "source": "creepy",
+      "target": "one day",
+      "value": 3
+    },
+    {
+      "source": "midnight",
+      "target": "one night",
+      "value": 3
+    },
+    {
+      "source": "third",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "midnight",
+      "target": "years",
+      "value": 2
+    },
+    {
+      "source": "many years",
+      "target": "today",
+      "value": 4
+    },
+    {
+      "source": "One",
+      "target": "one day",
+      "value": 5
+    },
+    {
+      "source": "the years",
+      "target": "today",
+      "value": 4
+    },
+    {
+      "source": "first",
+      "target": "four",
+      "value": 9
+    },
+    {
+      "source": "One",
+      "target": "the Civil War",
+      "value": 8
+    },
+    {
+      "source": "3rd",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "value": 7
+    },
+    {
+      "source": "2nd",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "2nd",
+      "target": "today",
+      "value": 4
+    },
+    {
+      "source": "the late 1800's",
+      "target": "today",
+      "value": 3
+    },
+    {
+      "source": "midnight",
+      "target": "the night",
+      "value": 2
+    },
+    {
+      "source": "many years ago",
+      "target": "midnight",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "five",
+      "value": 4
+    },
+    {
+      "source": "many years ago",
+      "target": "second",
+      "value": 3
+    },
+    {
+      "source": "1800",
+      "target": "Inn",
+      "value": 2
+    },
+    {
+      "source": "first",
+      "target": "five",
+      "value": 5
+    },
+    {
+      "source": "four",
+      "target": "second",
+      "value": 5
+    },
+    {
+      "source": "four",
+      "target": "third",
+      "value": 3
+    },
+    {
+      "source": "the early 1900's",
+      "target": "two",
+      "value": 3
+    },
+    {
+      "source": "3rd",
+      "target": "third",
+      "value": 5
+    },
+    {
+      "source": "Indians",
+      "target": "three",
+      "value": 5
+    },
+    {
+      "source": "Rumor",
+      "target": "two",
+      "value": 4
+    },
+    {
+      "source": "2",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "the years",
+      "value": 4
+    },
+    {
+      "source": "the late 1800's",
+      "target": "this day",
+      "value": 3
+    },
+    {
+      "source": "the late 1800's",
+      "target": "three",
+      "value": 5
+    },
+    {
+      "source": "the years",
+      "target": "this day",
+      "value": 2
+    },
+    {
+      "source": "every night",
+      "target": "the night",
+      "value": 2
+    },
+    {
+      "source": "creepy",
+      "target": "late at night",
+      "value": 5
+    },
+    {
+      "source": "the day",
+      "target": "third",
+      "value": 3
+    },
+    {
+      "source": "1950",
+      "target": "3rd",
+      "value": 2
+    },
+    {
+      "source": "1950",
+      "target": "first",
+      "value": 4
+    },
+    {
+      "source": "1950",
+      "target": "second",
+      "value": 3
+    },
+    {
+      "source": "Rumor",
+      "target": "one night",
+      "value": 3
+    },
+    {
+      "source": "one day",
+      "target": "the day",
+      "value": 2
+    },
+    {
+      "source": "nights",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "4",
+      "target": "four",
+      "value": 2
+    },
+    {
+      "source": "1",
+      "target": "4",
+      "value": 2
+    },
+    {
+      "source": "Indian",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "the late 1800's",
+      "target": "the night",
+      "value": 2
+    },
+    {
+      "source": "Indians",
+      "target": "one night",
+      "value": 3
+    },
+    {
+      "source": "Inn",
+      "target": "third",
+      "value": 5
+    },
+    {
+      "source": "3",
+      "target": "50",
+      "value": 2
+    },
+    {
+      "source": "3",
+      "target": "nights",
+      "value": 3
+    },
+    {
+      "source": "50",
+      "target": "One",
+      "value": 3
+    },
+    {
+      "source": "50",
+      "target": "nights",
+      "value": 2
+    },
+    {
+      "source": "50",
+      "target": "second",
+      "value": 4
+    },
+    {
+      "source": "nights",
+      "target": "this day",
+      "value": 2
+    },
+    {
+      "source": "Inn",
+      "target": "night",
+      "value": 3
+    },
+    {
+      "source": "midnight",
+      "target": "third",
+      "value": 4
+    },
+    {
+      "source": "1950",
+      "target": "today",
+      "value": 2
+    },
+    {
+      "source": "many years",
+      "target": "many years ago",
+      "value": 2
+    },
+    {
+      "source": "many years ago",
+      "target": "one day",
+      "value": 3
+    },
+    {
+      "source": "One night",
+      "target": "third",
+      "value": 3
+    },
+    {
+      "source": "late at night",
+      "target": "one night",
+      "value": 5
+    },
+    {
+      "source": "five",
+      "target": "late at night",
+      "value": 4
+    },
+    {
+      "source": "Indian",
+      "target": "five",
+      "value": 2
+    },
+    {
+      "source": "the Civil War",
+      "target": "third",
+      "value": 3
+    },
+    {
+      "source": "3",
+      "target": "the years",
+      "value": 2
+    },
+    {
+      "source": "every night",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "many years ago",
+      "target": "three",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "3",
+      "value": 2
+    },
+    {
+      "source": "the day",
+      "target": "the late 1800's",
+      "value": 3
+    },
+    {
+      "source": "the late 1800's",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "Rumor",
+      "target": "third",
+      "value": 3
+    },
+    {
+      "source": "1970",
+      "target": "three",
+      "value": 2
+    },
+    {
+      "source": "the next day",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "50",
+      "target": "one",
+      "value": 2
+    },
+    {
+      "source": "Halloween",
+      "target": "the night",
+      "value": 2
+    },
+    {
+      "source": "6",
+      "target": "creepy",
+      "value": 2
+    },
+    {
+      "source": "Halloween",
+      "target": "the early 1900's",
+      "value": 2
+    },
+    {
+      "source": "Inn",
+      "target": "second",
+      "value": 5
+    },
+    {
+      "source": "late at night",
+      "target": "the day",
+      "value": 5
+    },
+    {
+      "source": "1800",
+      "target": "6",
+      "value": 2
+    },
+    {
+      "source": "6",
+      "target": "second",
+      "value": 3
+    },
+    {
+      "source": "Indian",
+      "target": "many years",
+      "value": 3
+    },
+    {
+      "source": "first",
+      "target": "fourth",
+      "value": 6
+    },
+    {
+      "source": "third",
+      "target": "today",
+      "value": 4
+    },
+    {
+      "source": "2nd",
+      "target": "Inn",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "first",
+      "value": 7
+    },
+    {
+      "source": "2nd",
+      "target": "Indian",
+      "value": 2
+    },
+    {
+      "source": "late at night",
+      "target": "today",
+      "value": 3
+    },
+    {
+      "source": "Halloween",
+      "target": "years",
+      "value": 4
+    },
+    {
+      "source": "1950",
+      "target": "nights",
+      "value": 3
+    },
+    {
+      "source": "creepy",
+      "target": "three",
+      "value": 3
+    },
+    {
+      "source": "Indian",
+      "target": "the early 1900's",
+      "value": 3
+    },
+    {
+      "source": "every night",
+      "target": "two",
+      "value": 3
+    },
+    {
+      "source": "50",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "1950",
+      "target": "Rumor",
+      "value": 2
+    },
+    {
+      "source": "Rumor",
+      "target": "today",
+      "value": 2
+    },
+    {
+      "source": "4",
+      "target": "midnight",
+      "value": 2
+    },
+    {
+      "source": "three",
+      "target": "years",
+      "value": 3
+    },
+    {
+      "source": "50",
+      "target": "the night",
+      "value": 2
+    },
+    {
+      "source": "One",
+      "target": "many years ago",
+      "value": 3
+    },
+    {
+      "source": "Two",
+      "target": "one night",
+      "value": 2
+    },
+    {
+      "source": "Rumor",
+      "target": "many years ago",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "6",
+      "value": 2
+    },
+    {
+      "source": "6",
+      "target": "first",
+      "value": 5
+    },
+    {
+      "source": "6",
+      "target": "late at night",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "1970",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "Indians",
+      "value": 3
+    },
+    {
+      "source": "1",
+      "target": "three",
+      "value": 2
+    },
+    {
+      "source": "3",
+      "target": "today",
+      "value": 2
+    },
+    {
+      "source": "6",
+      "target": "one",
+      "value": 3
+    },
+    {
+      "source": "many years ago",
+      "target": "the day",
+      "value": 2
+    },
+    {
+      "source": "Rumor",
+      "target": "this day",
+      "value": 2
+    },
+    {
+      "source": "3",
+      "target": "the late 1800's",
+      "value": 2
+    },
+    {
+      "source": "five",
+      "target": "the night",
+      "value": 2
+    },
+    {
+      "source": "3",
+      "target": "one day",
+      "value": 2
+    },
+    {
+      "source": "March 2008",
+      "target": "creepy",
+      "value": 2
+    },
+    {
+      "source": "March 2008",
+      "target": "the night",
+      "value": 4
+    },
+    {
+      "source": "One night",
+      "target": "creepy",
+      "value": 2
+    },
+    {
+      "source": "3rd",
+      "target": "creepy",
+      "value": 2
+    },
+    {
+      "source": "4",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "Inn",
+      "target": "many years",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "the next day",
+      "value": 2
+    },
+    {
+      "source": "1950",
+      "target": "6",
+      "value": 2
+    },
+    {
+      "source": "4",
+      "target": "6",
+      "value": 2
+    },
+    {
+      "source": "4",
+      "target": "first",
+      "value": 6
+    },
+    {
+      "source": "five",
+      "target": "the years",
+      "value": 2
+    },
+    {
+      "source": "1800",
+      "target": "four",
+      "value": 2
+    },
+    {
+      "source": "March 2008",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "this day",
+      "target": "today",
+      "value": 3
+    },
+    {
+      "source": "4",
+      "target": "Halloween",
+      "value": 2
+    },
+    {
+      "source": "Inn",
+      "target": "today",
+      "value": 3
+    },
+    {
+      "source": "March 2008",
+      "target": "second",
+      "value": 2
+    },
+    {
+      "source": "2",
+      "target": "nights",
+      "value": 2
+    },
+    {
+      "source": "Indian",
+      "target": "the next day",
+      "value": 2
+    },
+    {
+      "source": "March 2008",
+      "target": "one night",
+      "value": 2
+    },
+    {
+      "source": "6",
+      "target": "night",
+      "value": 3
+    },
+    {
+      "source": "Two",
+      "target": "five",
+      "value": 2
+    },
+    {
+      "source": "3",
+      "target": "Two",
+      "value": 3
+    },
+    {
+      "source": "3",
+      "target": "every night",
+      "value": 2
+    },
+    {
+      "source": "One night",
+      "target": "midnight",
+      "value": 3
+    },
+    {
+      "source": "1970",
+      "target": "one night",
+      "value": 2
+    },
+    {
+      "source": "1970",
+      "target": "third",
+      "value": 2
+    },
+    {
+      "source": "3rd",
+      "target": "One night",
+      "value": 2
+    },
+    {
+      "source": "many years ago",
+      "target": "the night",
+      "value": 2
+    },
+    {
+      "source": "5",
+      "target": "three",
+      "value": 2
+    },
+    {
+      "source": "four",
+      "target": "many years ago",
+      "value": 2
+    },
+    {
+      "source": "fourth",
+      "target": "late at night",
+      "value": 2
+    },
+    {
+      "source": "nights",
+      "target": "the Civil War",
+      "value": 2
+    },
+    {
+      "source": "4",
+      "target": "the day",
+      "value": 3
+    },
+    {
+      "source": "Inn",
+      "target": "two",
+      "value": 3
+    }
+  ]
+}
