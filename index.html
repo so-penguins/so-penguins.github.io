@@ -6,6 +6,7 @@
   <title>DSCI550 - Creating Data Insights from the Haunted Places Dataset</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -151,17 +152,68 @@
       opacity: 1;
     }
 
+    /* Main container styles */
+    .main-container {
+      padding: 1.5rem;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      margin: 1rem;
+      min-height: calc(100vh - 100px);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Button container styles */
+    .button-container {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .viz-button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .viz-button:hover {
+      background-color: #2980b9;
+    }
+
+    .viz-button.active {
+      background-color: #2ecc71;
+    }
+
     /* Visualization container styles */
     .visualization-container {
-      width: 100%;
-      height: calc(100vh - 200px);
+      flex: 1;
       display: none;
       position: relative;
-      margin: 0 auto;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
     }
 
     .visualization-container.active {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .visualization-container svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Force Graph specific styles */
+    body.force-graph .visualization-container svg {
+      min-width: 1000px;
+      min-height: 800px;
     }
 
     /* Radial Tree specific styles */
@@ -189,39 +241,6 @@
       line-height: 1.4 !important;
       margin-bottom: 3rem !important;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .button-container {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 2rem;
-      z-index: 10;
-    }
-
-    .viz-button {
-      padding: 1rem 2rem;
-      font-size: 1.1rem;
-      background-color: #3498db;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-
-    .viz-button:hover {
-      background-color: #2980b9;
-      transform: translateY(-2px);
-    }
-
-    .viz-button.active {
-      background-color: #2ecc71;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .viz-button.active:hover {
-      background-color: #27ae60;
     }
 
     /* Explore button styles */
@@ -355,14 +374,18 @@
 
   <!-- Visualizations View -->
   <section class="visualization-view" id="visualizationView">
-    <div class="hero">
+    <div class="main-container">
       <div class="button-container">
+        <button class="button is-outlined" onclick="showHome()">
+          <span class="icon is-small">
+            <i class="fas fa-arrow-left"></i>
+          </span>
+        </button>
         <button class="viz-button button is-info" data-viz="force-graph">Force Graph</button>
         <button class="viz-button button is-info" data-viz="circle-packing-morandi">Circle Packing Morandi</button>
         <button class="viz-button button is-info" data-viz="radial-tree-collapsible">Radial Tree Collapsible</button>
         <button class="viz-button button is-info" data-viz="force-graph-v2">Force Graph V2</button>
         <button class="viz-button button is-info" data-viz="timeseries">Timeseries</button>
-        <button class="button is-danger" onclick="showHome()">Back to Home</button>
       </div>
       <div id="visualization" class="visualization-container"></div>
       <div id="tooltip" class="tooltip" style="opacity:0;"></div>
@@ -442,15 +465,16 @@
     function createForceGraph() {
       document.body.className = 'force-graph';
       const container = d3.select("#visualization");
-      container.html(""); // Clear previous visualization
+      container.html("");
       
-      const width = 800;
-      const height = 600;
+      const width = 1200;
+      const height = 900; 
+      
       const svg = container.append("svg")
         .attr("width", width)
         .attr("height", height)
-        // .style("display", "block")
-        // .style("margin", "0 auto");
+        .attr("viewBox", [0, 0, width, height])
+        .attr("preserveAspectRatio", "xMidYMid meet");
 
       d3.json("./json/ner_force_graph_top50.json").then(function(graph) {
         const link = svg.append("g")
@@ -464,7 +488,7 @@
           .data(graph.nodes)
           .join("circle")
           .attr("class", "node")
-          .attr("r", 5)
+          .attr("r", 8)  // Increased node size
           .call(drag());
 
         const label = svg.append("g")
@@ -472,12 +496,13 @@
           .data(graph.nodes)
           .join("text")
           .text(d => d.id)
-          .attr("x", 6)
-          .attr("y", 3);
+          .attr("x", 12)  // Increased text offset
+          .attr("y", 4)
+          .style("font-size", "12px");  // Increased font size
 
         const simulation = d3.forceSimulation(graph.nodes)
-          .force("link", d3.forceLink(graph.links).id(d => d.id).distance(50))
-          .force("charge", d3.forceManyBody().strength(-100))
+          .force("link", d3.forceLink(graph.links).id(d => d.id).distance(100))  // Increased link distance
+          .force("charge", d3.forceManyBody().strength(-200))  // Increased repulsion
           .force("center", d3.forceCenter(width / 2, height / 2))
           .on("tick", ticked);
 
@@ -491,8 +516,8 @@
             .attr("cx", d => d.x)
             .attr("cy", d => d.y);
           label
-            .attr("x", d => d.x)
-            .attr("y", d => d.y);
+            .attr("x", d => d.x + 12)
+            .attr("y", d => d.y + 4);
         }
 
         function drag() {
@@ -527,9 +552,6 @@
       const svg = container.append("svg")
         .attr("width", size)
         .attr("height", size)
-        // .attr("viewBox", [0, 0, size, size])
-        // .style("display", "block")
-        // .style("margin", "0 auto");
 
       const tooltip = d3.select("#tooltip");
 
