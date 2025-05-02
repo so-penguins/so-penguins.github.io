@@ -1,3 +1,20 @@
+/* Constants */
+const visualizationDescriptions = {
+  'force-graph': "This force-directed graph maps out co-occurrences of named entities (people, places, institutions) from the description texts using spaCy's NER. It shows narrative and thematic links across haunting reports. Common terms like 'cemetery,' 'hospital,' and personal names recur, indicating how institutions and folklore are deeply tied to perceptions of the supernatural.",
+  'circle-packing-morandi': "This circle packing chart visualizes how frequently different types of hauntings are reported, based on both apparition type (e.g., Ghost, Poltergeist, Demon) and event type (e.g., Death, Accident, Unknown). Larger circles represent more commonly reported combinations. The visualization shows how the majority of reports involve ambiguous ghostly presences linked to death or trauma, highlighting narrative patterns in the dataset.",
+  'radial-tree-collapsible': "This radial dendrogram shows the nested structure of haunting reports, from apparition type → event category → state → individual place. It visualizes our hierarchical classification work, highlighting that ghosts—especially those tied to murder, trauma, or death—dominate the dataset. Regional clusters, particularly in the Northeast and South, reveal culturally distinct haunting patterns",
+  'force-graph-v2': "This force-directed graph explores how AI-generated image captions link haunted locations by visual themes. Nodes represent haunted places, and edges represent caption-based similarity. The sparse connectivity and primarily linear paths suggest low visual overlap between entries, with few shared motifs across the dataset. A notable exception is the 'Mystery Explorers Guild' node (shown in red), which stands out for its higher connectivity.",
+  'timeseries': "This timeline reveals when haunting events were reported to occur. Spikes around 1700, 1800, 1900, and 2000 suggest turn-of-century clustering. Mid-century bumps likely reflect social upheaval or trauma, such as industrialization or war. The pattern offers insight into how cultural context influences reports of the supernatural."
+};
+
+const visualizationTitles = {
+  'force-graph': 'Named Entity Force-Directed Graph',
+  'circle-packing-morandi': 'Circle Packing: Frequency of Haunting Reports',
+  'radial-tree-collapsible': 'Radial Dendrogram: Apparition-Type Hierarchy',
+  'force-graph-v2': 'Force-Directed Graph: Image-Based Connections Between Haunted Places',
+  'timeseries': 'Time Series: Haunting Events Over Time'
+};
+
 /* Initialize Swiper */
 document.addEventListener('DOMContentLoaded', function () {
   const descriptions = [
@@ -23,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     "When people drive by sometimes they see a white ball run across the into a marble headstone."
   ];
 
-  const swiper = new Swiper('.swiper', {
+  new Swiper('.swiper', {
     /* Optional parameters */
     loop: false,
     effect: 'fade',
@@ -52,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function showVisualizations() {
   document.getElementById('homeView').style.display = 'none';
   document.getElementById('visualizationView').style.display = 'block';
+
   // Initialize first visualization and activate its button
   const forceGraphBtn = document.querySelector('[data-viz="force-graph"]');
   forceGraphBtn.classList.add('active');
@@ -64,22 +82,6 @@ function showHome() {
   document.getElementById('homeView').style.display = 'block';
   document.getElementById('visualizationView').style.display = 'none';
 }
-
-const visualizationDescriptions = {
-  'force-graph': "This force-directed graph maps out co-occurrences of named entities (people, places, institutions) from the description texts using spaCy's NER. It shows narrative and thematic links across haunting reports. Common terms like 'cemetery,' 'hospital,' and personal names recur, indicating how institutions and folklore are deeply tied to perceptions of the supernatural.",
-  'circle-packing-morandi': "This circle packing chart visualizes how frequently different types of hauntings are reported, based on both apparition type (e.g., Ghost, Poltergeist, Demon) and event type (e.g., Death, Accident, Unknown). Larger circles represent more commonly reported combinations. The visualization shows how the majority of reports involve ambiguous ghostly presences linked to death or trauma, highlighting narrative patterns in the dataset.",
-  'radial-tree-collapsible': "This radial dendrogram shows the nested structure of haunting reports, from apparition type → event category → state → individual place. It visualizes our hierarchical classification work, highlighting that ghosts—especially those tied to murder, trauma, or death—dominate the dataset. Regional clusters, particularly in the Northeast and South, reveal culturally distinct haunting patterns",
-  'force-graph-v2': "This force-directed graph explores how AI-generated image captions link haunted locations by visual themes. Nodes represent haunted places, and edges represent caption-based similarity. The sparse connectivity and primarily linear paths suggest low visual overlap between entries, with few shared motifs across the dataset. A notable exception is the 'Mystery Explorers Guild' node (shown in red), which stands out for its higher connectivity.",
-  'timeseries': "This timeline reveals when haunting events were reported to occur. Spikes around 1700, 1800, 1900, and 2000 suggest turn-of-century clustering. Mid-century bumps likely reflect social upheaval or trauma, such as industrialization or war. The pattern offers insight into how cultural context influences reports of the supernatural."
-};
-
-const visualizationTitles = {
-  'force-graph': 'Named Entity Force-Directed Graph',
-  'circle-packing-morandi': 'Circle Packing: Frequency of Haunting Reports',
-  'radial-tree-collapsible': 'Radial Dendrogram: Apparition-Type Hierarchy',
-  'force-graph-v2': 'Force-Directed Graph: Image-Based Connections Between Haunted Places',
-  'timeseries': 'Time Series: Haunting Events Over Time'
-};
 
 function updateVisualizationDescription(vizType) {
   const titleEl = document.getElementById('viz-title');
@@ -182,7 +184,7 @@ function createForceGraph() {
 
 function createCirclePackingMorandi() {
   document.body.className = 'circle-packing';
-  const container = d3.select("#visualization");
+  const container = d3.select("visualization");
   container.html("");
 
   const containerWidth = document.getElementById('visualization').clientWidth;
@@ -340,6 +342,10 @@ function createForceGraphV2() {
   document.body.className = 'force-graph-v2';
   const container = d3.select("#visualization");
   container.html(""); // Clear previous visualization
+
+  // Clear previous legend
+  const legendDiv = document.getElementById('legend');
+  legendDiv.innerHTML = '';
 
   const graph = {
     "nodes": [
@@ -612,7 +618,7 @@ function createTimeseries() {
   })
 }
 
-/* Add event listeners to buttons */
+/* Event listeners to buttons */
 document.querySelectorAll('.viz-button').forEach(button => {
   button.addEventListener('click', function () {
     /* Remove active class from all buttons */
@@ -629,6 +635,14 @@ document.querySelectorAll('.viz-button').forEach(button => {
 
     // Update description
     updateVisualizationDescription(vizType);
+
+    // Show legend only for Force Graph V2
+    const legend = document.getElementById('legend');
+    if (vizType === 'force-graph-v2') {
+      legend.style.display = 'block';
+    } else {
+      legend.style.display = 'none';
+    }
 
     switch (vizType) {
       case 'force-graph':
